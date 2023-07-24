@@ -1,0 +1,155 @@
+---
+title: "R pre-sessional"
+subtitle: "Helping you to get started with R for your LSE modules!"
+#description: "This tutorial covers how to install R and RStudio, as well as some key skills you will need for using R in your LSE modules. These skills include how to write and use code in a R script"
+author:
+   - name: Andrew Moles
+     affiliation: Learning Developer, Digital Skills Lab
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    toc-location: right
+    code-fold: true
+    keep-md: true
+    embed-resources: true
+    smooth-scroll: true
+    mainfont: roboto
+theme: 
+  - flatly
+  - css/roboto.css
+title-block-banner: "#15BC9B"
+title-block-banner-color: "#000508"
+css: css/styles.css
+---
+
+
+
+# Introduction to the pre-sessional for R 
+
+This tutorial is for all students who will be taking the following modules:
+
+*   MY360/361
+*   MY451A
+*   MY452A
+*   MY464
+*   MY470
+*   MY472
+*   MY452/552
+*   MY455/555/MY472
+*   MY457/557
+*   MY474/574
+*   MY461/561
+*   MY459/559
+*   DS105
+*   DS202
+
+For your pre-sessional programme for these modules, this is the first part. See the *next steps* chapter for information on what happens after completing this tutorial. 
+
+This tutorial covers:
+
+*   How to install R and RStudio
+*   How to open R scripts
+*   How to write code in R scripts
+*   How to use R Markdown files
+
+# Installing R and RStudio
+
+Below are step by step instructions for getting R and RStudio installed in your personal laptop. RStudio is a popular tool for using R.
+
+If you are wanting to install R and RStudio on a device whereby you do not have administrative privileges, contact `tech.support@lse.ac.uk`
+
+## Windows install
+
+### Install R
+
+To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/windows/). Once downloaded, follow the installation instructions.
+
+### Install RStudio
+
+Finally, we install RStudio. To do so, we download it from the [Posit website](https://posit.co/download/rstudio-desktop/), and follow the installation instructions.
+
+Once installed, open RStudio. If the installation of all the above software has worked you should see three panes, with one of them telling you the version of R you have installed.
+
+## Mac install
+
+### Install R
+
+To install R on your Mac you need to know the type of processor your Mac uses. This is straightforward to find out:
+
+1)  On the top navigation bar on your Mac, click on the apple icon
+2)  From the drop down menu, select *About This Mac*
+3)  In *Overview* you will find the information about your Mac. If you have an *Intel Mac*, you will see the processor row, which has information that includes *Intel*. If you have an M1 Mac, you will see chip and M1 in the *Overview*
+
+If you have a *M1 Mac* you will need to download the R package that says something like: *R-4.2.2-arm64.pkg*. If you have a *Intel Mac* you will need to download the R package that says something like: *R-4.2.2.pkg*
+
+To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/macosx/). Once downloaded, follow the installation instructions.
+
+### Install XQuartz
+
+To run R on a Mac operating system, XQuartz is required. You can install it by following [this link](https://www.xquartz.org/), downloading it and following the installation instructions.
+
+### Install RStudio
+
+Finally, we install RStudio. To do so, we download it from the [Posit website](https://posit.co/download/rstudio-desktop/), and follow the installation instructions.
+
+Once installed, open RStudio. If the installation of all the above software has worked you should see three panes, with one of them telling you the version of R you have installed.
+
+## Installing R and RStudio installation issues
+
+If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you will have to install an older version of the software. For help with this please contact `digital.skills.lab@lse.ac.uk`.
+
+# Quick note on R and RStudio
+
+You might be asking yourself, why am I installing R ***and*** RStudio?
+
+An abridged answer to this question is R is the language we will be using, and RStudio is the environment in which we will be using R.
+
+------------------------------------------------------------------------
+
+# First steps with R
+
+Load RStudio
+
+You should see a layout with 3 panels
+
+There are two main ways of running R code: scripts and R Markdown. We will touch on both.
+
+## How to use R scripts
+
+## How to use R Markdown
+
+# Exercises
+
+The best way to get comfortable with a software is to start using it! Below are a series of exercises which will help you get more comfortable writing and running R code.
+
+## Exercise 1
+
+## Exercise 2
+
+## Exercise 3
+
+# Next steps
+
+Add graphic here
+
+![](images/pre-sessional-outline.png)
+
+Explain steps
+
+Move to final remarks about extra support
+
+# Final remarks
+
+This tutorial was written by the DSL in support for the Statistics and Methodology departments, and the Data Science Institute
+
+
+::: {.cell}
+::: {.cell-output-display}
+![](images/DigitalSkillsLab.png)
+:::
+:::
+
+
+You can find out more information on the courses and support the Digital Skills Lab offers via [our webpage](https://info.lse.ac.uk/current-students/digital-skills-lab).
