@@ -217,11 +217,15 @@ In this exercise we are going to open a script, and save it.
 
 
 ::: {.cell}
-::: {.cell-output .cell-output-stdout}
+
+```{.r .cell-code  code-fold="false"}
+# running time in minutes
+run_minutes <- 26.34
+# running time in seconds
+run_seconds <- run_minutes*60
+# print result
+run_seconds
 ```
-[1] 1580.4
-```
-:::
 :::
 
 

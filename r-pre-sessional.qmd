@@ -215,7 +215,7 @@ In this exercise we are going to open a script, and save it.
 
 ```{r run-example}
 #| code-fold: false
-#| echo: false
+#| eval: false
 
 # running time in minutes
 run_minutes <- 26.34
@@ -226,7 +226,7 @@ run_seconds
 ```
 
 4) Now run the code! There are two main ways of doing this. First, we can highlight the code, and click the `Run` button near the top centre right of RStudio. Second, we can put our cursor on each line and use `command/ctrl + enter` to run the code line by line. 
-5) The result of your code will appear in the console and should look like: `r paste0('[1] ', run_seconds)`
+5) The result of your code will appear in the console and should look like: `r paste0('[1] ', 1580.4)`
 
 We will write more code in this script in the following exercise! 
 
