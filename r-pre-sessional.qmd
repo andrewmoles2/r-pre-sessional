@@ -24,33 +24,39 @@ title-block-banner-color: "#000508"
 css: css/styles.css
 ---
 
-# Introduction to the pre-sessional for R 
+# Introduction to the pre-sessional for R
 
 This tutorial is for all students who will be taking the following modules:
 
-*   MY360/361
-*   MY451A
-*   MY452A
-*   MY464
-*   MY470
-*   MY472
-*   MY452/552
-*   MY455/555/MY472
-*   MY457/557
-*   MY474/574
-*   MY461/561
-*   MY459/559
-*   DS105
-*   DS202
+::: columns
+::: {.column width="50%"}
+-   MY360/361
+-   MY451A
+-   MY452A
+-   MY464
+-   MY470
+-   MY472
+-   MY452/552
+:::
 
-For your pre-sessional programme for these modules, this is the first part. See the *next steps* chapter for information on what happens after completing this tutorial. 
+::: {.column width="50%"}
+-   MY455/55/MY472
+-   MY457/557
+-   MY474/574
+-   MY461/561
+-   MY459/559
+-   DS105
+-   DS202
+:::
+:::
+
+For your pre-sessional programme for these modules, this is the first part. See the *next steps* chapter for information on what happens after completing this tutorial.
 
 This tutorial covers:
 
-*   How to install R and RStudio
-*   How to open R scripts
-*   How to write code in R scripts
-*   How to use R Markdown files
+-   How to install R and RStudio
+-   How to open R scripts
+-   How to write code in R scripts
 
 # Installing R and RStudio
 
@@ -62,11 +68,21 @@ If you are wanting to install R and RStudio on a device whereby you do not have 
 
 ### Install R
 
-To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/windows/). Once downloaded, follow the installation instructions.
+-   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/windows/)
+
+-   Click on either **base** or **install R for the first time**
+
+-   Click on the **download R for Windows** link
+
+-   Once downloaded, open the `.exe` file and follow the installation instructions on your computer
 
 ### Install RStudio
 
-Finally, we install RStudio. To do so, we download it from the [Posit website](https://posit.co/download/rstudio-desktop/), and follow the installation instructions.
+-   To install RStudio we download it from the [Posit website](https://posit.co/download/rstudio-desktop/)
+
+-   Click on the **Download RStudio Desktop** link
+
+-   Once downloaded, open the `.exe` file and follow the installation instructions on your computer
 
 Once installed, open RStudio. If the installation of all the above software has worked you should see three panes, with one of them telling you the version of R you have installed.
 
@@ -78,11 +94,25 @@ To install R on your Mac you need to know the type of processor your Mac uses. T
 
 1)  On the top navigation bar on your Mac, click on the apple icon
 2)  From the drop down menu, select *About This Mac*
-3)  In *Overview* you will find the information about your Mac. If you have an *Intel Mac*, you will see the processor row, which has information that includes *Intel*. If you have an M1 Mac, you will see chip and M1 in the *Overview*
+3)  In *Overview* you will find the information about your Mac. If you have an *Intel Mac*, you will see the processor row, which has information that includes *Intel*. If you have an M1 or M2 Mac, you will see chip and M1/M2 in the *Overview* with something like *Chip Apple M1*
 
-If you have a *M1 Mac* you will need to download the R package that says something like: *R-4.2.2-arm64.pkg*. If you have a *Intel Mac* you will need to download the R package that says something like: *R-4.2.2.pkg*
+![](images/mac_pros1.png){width="49%"} ![](images/mac_pros2.png){width="49%"}
 
-To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/macosx/). Once downloaded, follow the installation instructions.
+#### M1 or M2 Mac
+
+-   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/macosx/)
+
+-   If you have a *M1 Mac* you will need click on the link the contains **arm64** to download R. It will look something like `R-4.3.1-arm64.pkg`
+
+-   Once downloaded, open the `.pkg` file and follow the installation instructions
+
+#### Intel Mac
+
+-   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/macosx/)
+
+-   If you have a *Intel Mac* you will need to click on the link that just contains the version of R. It will look something like `R-4.3.1.pkg`, and can be located a touch further down the page under the header **Binaries for legacy macOS/OS X systems:**
+
+-   Once downloaded, open the `.pkg` file and follow the installation instructions
 
 ### Install XQuartz
 
@@ -90,7 +120,11 @@ To run R on a Mac operating system, XQuartz is required. You can install it by f
 
 ### Install RStudio
 
-Finally, we install RStudio. To do so, we download it from the [Posit website](https://posit.co/download/rstudio-desktop/), and follow the installation instructions.
+-   To install RStudio we download it from the [Posit website](https://posit.co/download/rstudio-desktop/)
+
+-   Click on the **Download RStudio Desktop** link
+
+-   Once downloaded, open the `.dmg` file and follow the installation instructions on your computer
 
 Once installed, open RStudio. If the installation of all the above software has worked you should see three panes, with one of them telling you the version of R you have installed.
 
@@ -98,37 +132,193 @@ Once installed, open RStudio. If the installation of all the above software has 
 
 If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you will have to install an older version of the software. For help with this please contact `digital.skills.lab@lse.ac.uk`.
 
-# Quick note on R and RStudio
+## Quick note on R and RStudio
 
 You might be asking yourself, why am I installing R ***and*** RStudio?
 
 An abridged answer to this question is R is the language we will be using, and RStudio is the environment in which we will be using R.
 
+## Another quick note on why R
+
+LSE Statistics and methodology courses primarily use R. This is because R is a excellent tool for:
+
+-   Statistics
+-   Data handling (i.e. cleaning and manipulating data)
+-   Visualisations, interactive graphics, and dashboards
+-   Reporting
+
+R is popular as shown in the PYPL index from 2023
+
+![PYPL index 2023](https://raw.githubusercontent.com/andrewmoles2/rTrainIntroduction/main/r-fundamentals-1/Images/PYPL_index_23.png){width="400" fig-align="center"}
+
+R is an open-source tool, which means you do not need to buy a licence in order to use it.
+
+Some cool things you can do in R:
+
+![Animated gif of rainfall and temperature changes over time in Australian cities](https://github.com/andrewmoles2/TidyTuesday/blob/master/Australia-fires-2020-01-07/Auz_Rain&Temp2.gif?raw=true){fig-alt="Animated gif of rainfall and temperature changes over time in Australian cities" fig-align="center" width="90%"}
+
+![3d rendered map of monument valley in Arizona, United States](https://github.com/andrewmoles2/TidyTuesday/blob/master/elevation_maps/vista-maps/outputs/monument_valley.png?raw=true){fig-alt="3d rendered map of monument valley in Arizona, United States" fig-align="center" width="70%"}
+
 ------------------------------------------------------------------------
 
 # First steps with R
 
-Load RStudio
+If you have not done so already, open RStudio. You should be looking for this icon: ![](images/rs.png)
 
-You should see a layout with 3 panels
+When RStudio opens you should see a layout with 3 panels. 
 
-There are two main ways of running R code: scripts and R Markdown. We will touch on both.
+![RStudio, image from 2023](images/rstudio.png)
 
-## How to use R scripts
+The largest panel on the left with the `>` is the console. On the bottom right there is the files pane, and top right is the environment pane. 
 
-## How to use R Markdown
+There are three ways of running R code: console, scripts and R Markdown. In this tutorial we will cover the console and scripts. 
 
-# Exercises
+The best way to get comfortable with a software is to start using it! We will run through series of exercises which will help you get more comfortable writing and running R code. The exercises include:
 
-The best way to get comfortable with a software is to start using it! Below are a series of exercises which will help you get more comfortable writing and running R code.
+*   Calculate the weighted average of a students university studies for 1 year
+*   Perform some descriptive statistics of Christiano Ronaldo career statistics up till 2020, and make a few simple visualisations
 
-## Exercise 1
+# Exercise 1 - Running code from the console
 
-## Exercise 2
+The first thing we want to try is to run code from the console and see what happens. 
 
-## Exercise 3
+In RStudio, in the console, try and calculate the sum of 5 and 14. 
 
-# Next steps
+*hint: you can use the + symbol*
+
+You should see an output like: `r paste0("[1] 19")`
+
+# Exercise 2 - Assigning variables (still in the console)
+
+In R, when we want to keep data and re-use it later, we *assign* that data to a name. There are two ways of doing this. We can use the arrow like `<-` or the `=` symbol; the arrow is most commonly used in R. 
+
+If we wanted to *assign* our numbers from our previous calculation we would do: `a <- 5` and `b <- 14`. These are called *variables*.
+
+In your console: 
+
+1) Assign 5 to `a`
+2) Assign 14 to `b`
+3) Calculate the sum of `a` and `b`, and assign the result to `c` 
+4) Type `c` and hit enter in your console. What happened?
+
+In your *environment* panel, you should see: *add image here*
+
+# Exercise 3 - making a new R script
+
+Scripts are a useful way of remembering what we have done previously, allowing us to save code and share it with others. 
+
+In this exercise we are going to open a script, and save it. 
+
+1) In the top left corner of RStudio you should see a paper icon with a plus symbol. Click on it and select **R Script** 
+2) Now the script is open, save the script as something like `r-pre-sessional.R`. There are a few ways of doing this, pressing `command/ctrl + s` is the simplest method
+3) Lets try and run some code. In this example, you want to convert your running time in minutes to seconds. In the script, type or copy the following code:
+
+```{r run-example}
+#| code-fold: false
+#| echo: false
+
+# running time in minutes
+run_minutes <- 26.34
+# running time in seconds
+run_seconds <- run_minutes*60
+# print result
+run_seconds
+```
+
+4) Now run the code! There are two main ways of doing this. First, we can highlight the code, and click the `Run` button near the top centre right of RStudio. Second, we can put our cursor on each line and use `command/ctrl + enter` to run the code line by line. 
+5) The result of your code will appear in the console and should look like: `r paste0('[1] ', run_seconds)`
+
+We will write more code in this script in the following exercise! 
+
+# Exercise 4 - degree calculation
+
+For this exercise, we are going to calculate the overall grade for a student to see if they get a 1st, 2.1 or 2.2 degree. For simplicity, we will only work this out for 1 year of study. To help with this exercise, we have a few formulas to help you along the way! 
+
+Formula for weighted grade of 1 module:
+
+`MODULE 1 TOTAL = [CREDITS OF THE UNIT]/[TOTAL CREDITS] X [MODULE GRADE]`
+
+For the full calculation, we add the above formula together for each module:
+
+`DEGREE TOTAL = [MODULE 1 TOTAL] + [MODULE 2 TOTAL] + [MODULE 3 TOTAL] + [MODULE 4 TOTAL]`
+
+Our student takes 4 modules, worth 30 credits each, with the following grades: 
+
+*   Module 1: 66
+*   Module 2: 81
+*   Module 3: 57
+*   Module 4: 71
+
+In the script we made in exercise 3, try the following exercises:
+
+1) For each module, assign the result, for example `module_1 <- 66`
+2) Create a variable called `unit_credits`, which is the amount of credits each module is worth
+3) Create a variable called `total_credits`, which is the total number of credits of the 4 modules
+4) Now calculate the final grade for the student. You will need to use brackets for each module calculation, such as: `(unit credits / total credits * module grade) + ...` 
+
+```{r degree-calc, echo=FALSE}
+module_1 <- 66
+module_2 <- 81
+module_3 <- 57
+module_4 <- 71
+
+total_credits <- 120
+unit_credits <- 30
+
+final_grade <- (unit_credits/total_credits * module_1) + (unit_credits/total_credits * module_2) + (unit_credits/total_credits * module_3) + (unit_credits/total_credits * module_4)
+```
+
+You should get a final grade of: `r final_grade`
+
+# Exercise 5 - loading R scripts
+
+In the next two exercises we will be loading a pre-prepared script and doing some coding with it. 
+
+1) Click on the Download R file button and save the file where you saved your other R script
+
+{{< downloadthis resources/example.R label='Download R file' dname=example icon=code type=primary >}}
+
+2) Now open the file into R. You should be able to use the file menu to achieve this: `File > Open File...`
+3) With the file you should see some pre-written code. Run all the code
+4) What appeared in the *files panel*? Looking at the code in the script, what function do you think made the figure?
+
+In the next exercise, we explain a bit more about the code, make a few more visuals, and run some summary statistics. 
+
+# Exercise 6 - Christiano Ronaldo career statistics
+
+In the R script we loaded in the previous exercise, you might have noticed code that has numbers wrapped in brackets like: `c(1,2,3)`. These are called *vectors*. A vector is a set of information contained together in a specific order; in this case, numbers.
+
+To make vectors we have combined variables together using the `c()` function, which concatenates the numbers together. You can tell something is a function if it has `()`. 
+
+The calculation we did (`x + y`) will add *elementwise*, which in English means it will add the first element of x by the first element of y, and carry on until all elements are added. 
+
+With all that in mind, lets try and do some coding! We will be looking at Christiano Ronaldo's goals and appearances up till 2021.
+
+```{r c-ronaldo}
+#| code-fold: false
+#| echo: false
+
+appearances <- c(2, 31, 40, 50, 47, 53, 49, 53, 35, 54, 55, 55, 47, 54, 48, 46, 44, 43, 46, 44)
+goals <- c(0, 5, 6, 9, 12, 23, 42, 26, 33, 53, 60, 55, 51, 61, 51, 42, 44, 28, 37, 36)
+```
+
+*Hint: to use a function, we have to put a vector inside the brackets, like `sum(x)`*
+
+1) Use the `sum()` function to find out the total number of appearances. You should get: `r sum(appearances)`
+2) Use the `sum()` function to find out the total number of goals. You should get: `r sum(goals)`
+3) It would be interesting to find the goal ratio for each season. Divide goals by appearances and assign the result to `goal_ratio`
+4) Use the `summary()` function with `goal_ratio` vector you just made. What was his highest goal ratio? 
+5) Use the `hist()` function on the `goal_ratio` vector and review the result
+
+-------------------------------------
+
+# What are my next steps?
+
+If you are on the modules show below, it is recommended you attend the in-person pre-sessional training workshops the Digital Skills Lab will be running through September to early October. 
+
+*List of modules here* 
+
+Students not on these modules are very welcome to join the in-person pre-sessional training, particularly if you have struggled to get R installed, and want to get a better understanding of R. 
 
 Add graphic here
 
@@ -138,9 +328,17 @@ Explain steps
 
 Move to final remarks about extra support
 
+# What other support is available?
+
+Outside the pre-sessional workshops, the Digital Skills Lab will be running R workshops from October-December, then January-March, and again May-July. 
+
+There will also be drop-in advice and 1-2-1 services available throughout the year. 
+
+You can find out more information on the courses and support the Digital Skills Lab offers via [our webpage](https://info.lse.ac.uk/current-students/digital-skills-lab).
+
 # Final remarks
 
-This tutorial was written by the DSL in support for the Statistics and Methodology departments, and the Data Science Institute
+This tutorial was written by the DSL in support for the Statistics and Methodology departments, and the Data Science Institute. We hope that you found it helpful in getting started with R. 
 
 ```{r dsl_image, echo=FALSE}
 knitr::include_graphics("images/DigitalSkillsLab.png")
@@ -148,4 +346,4 @@ knitr::include_graphics("images/DigitalSkillsLab.png")
 #"#EFEEF3"
 ```
 
-You can find out more information on the courses and support the Digital Skills Lab offers via [our webpage](https://info.lse.ac.uk/current-students/digital-skills-lab).
+
