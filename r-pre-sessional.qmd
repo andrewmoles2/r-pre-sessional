@@ -11,9 +11,11 @@ format:
     toc: true
     toc-depth: 4
     toc-location: right
+    #toc-expand: false
     code-fold: true
     keep-md: true
     embed-resources: true
+    number-sections: true
     smooth-scroll: true
     mainfont: roboto
 theme: 
@@ -50,19 +52,22 @@ This tutorial is for all students who will be taking the following modules:
 :::
 :::
 
-For your pre-sessional programme for these modules, this is the first part. See the *next steps* chapter for information on what happens after completing this tutorial.
+For your pre-sessional programme for these modules, this is the first part. See @sec-steps for information on what happens after completing this tutorial.
 
-This tutorial covers:
+After having completed this tutorial, you will be able to:
 
--   How to install R and RStudio
--   How to open R scripts
--   How to write code in R scripts
+-   Install R and Rstudio
+-   Open and run R scripts
+-   Write code in R scripts
+
+If you struggle with any of the steps from this tutorial, we recommend the following:
+
+-   Come to the pre-sessional workshops, as detailed in @sec-workshops, to get help and learn more about R
+-   Seek support from our online 1-2-1 or drop-in advice, as detailed in the @sec-support section
 
 # Installing R and RStudio
 
-Below are step by step instructions for getting R and RStudio installed in your personal laptop. RStudio is a popular tool for using R.
-
-If you are wanting to install R and RStudio on a device whereby you do not have administrative privileges, contact `tech.support@lse.ac.uk`
+Below are step by step instructions for getting R and RStudio installed in your personal laptop.
 
 ## Windows install
 
@@ -83,8 +88,6 @@ If you are wanting to install R and RStudio on a device whereby you do not have 
 -   Click on the **Download RStudio Desktop** link
 
 -   Once downloaded, open the `.exe` file and follow the installation instructions on your computer
-
-Once installed, open RStudio. If the installation of all the above software has worked you should see three panes, with one of them telling you the version of R you have installed.
 
 ## Mac install
 
@@ -126,92 +129,126 @@ To run R on a Mac operating system, XQuartz is required. You can install it by f
 
 -   Once downloaded, open the `.dmg` file and follow the installation instructions on your computer
 
-Once installed, open RStudio. If the installation of all the above software has worked you should see three panes, with one of them telling you the version of R you have installed.
-
 ## Installing R and RStudio installation issues
 
-If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you will have to install an older version of the software. For help with this please contact `digital.skills.lab@lse.ac.uk`.
+If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you will have to install an older version of the software.
 
-## Quick note on R and RStudio
+It will be simplest, if you have faced installation issues, for you to come to a R pre-sessional workshop for support. See @sec-workshops for more information.
 
-You might be asking yourself, why am I installing R ***and*** RStudio?
-
-An abridged answer to this question is R is the language we will be using, and RStudio is the environment in which we will be using R.
-
-## Another quick note on why R
+# Why R?
 
 LSE Statistics and methodology courses primarily use R. This is because R is a excellent tool for:
 
 -   Statistics
 -   Data handling (i.e. cleaning and manipulating data)
 -   Visualisations, interactive graphics, and dashboards
--   Reporting
+-   Reporting (i.e. academic writing as well as building websites)
 
-R is popular as shown in the PYPL index from 2023
+R is an open-source tool, which means you do not need to buy a licence in order to use it, and is a popular programming language, as shown in the PYPL index from 2023
 
 ![PYPL index 2023](https://raw.githubusercontent.com/andrewmoles2/rTrainIntroduction/main/r-fundamentals-1/Images/PYPL_index_23.png){width="400" fig-align="center"}
-
-R is an open-source tool, which means you do not need to buy a licence in order to use it.
 
 Some cool things you can do in R:
 
 ![Animated gif of rainfall and temperature changes over time in Australian cities](https://github.com/andrewmoles2/TidyTuesday/blob/master/Australia-fires-2020-01-07/Auz_Rain&Temp2.gif?raw=true){fig-alt="Animated gif of rainfall and temperature changes over time in Australian cities" fig-align="center" width="90%"}
 
-![3d rendered map of monument valley in Arizona, United States](https://github.com/andrewmoles2/TidyTuesday/blob/master/elevation_maps/vista-maps/outputs/monument_valley.png?raw=true){fig-alt="3d rendered map of monument valley in Arizona, United States" fig-align="center" width="70%"}
+![Regional map UK showing how each area is doing in terms of gender pay equality for each year data has existed, from 2017-2022](https://github.com/andrewmoles2/TidyTuesday/blob/master/paygap-2022-06-28/median_pay_diff_postcode_year.png?raw=true){fig-alt="Regional map showing how each area of the UK is doing in terms of gender pay equality for each year data has existed from 2017-2023. " fig-align="center" width="75%"}
+
+::: {.callout-tip collapse="true"}
+## Fun side note
+
+This webpage was built using R. If you are interested, come to the pre-sessional workshops and chat to one of the instructors about it!
+:::
 
 ------------------------------------------------------------------------
 
 # First steps with R
 
-If you have not done so already, open RStudio. You should be looking for this icon: ![](images/rs.png)
+If you have not done so already, open RStudio!
 
-When RStudio opens you should see a layout with 3 panels. 
+**Windows users:**
+
+-   Type `RStudio` in the search bar (bottom left, next to windows symbol)
+-   If you prefer, open the start menu (click windows symbol), then scroll until you find RStudio
+
+**Mac users:**
+
+-   Hit command + space and type in `RStudio`
+-   If you prefer to look for RStudio in an applications folder (open finder and select Applications on the left panel), you should be looking for this icon: ![](images/rs.png)
+
+When RStudio opens you should see a layout with 3 panels, similar to the image below.
 
 ![RStudio, image from 2023](images/rstudio.png)
 
-The largest panel on the left with the `>` is the console. On the bottom right there is the files pane, and top right is the environment pane. 
+The largest panel on the left with the `>` is the console. On the bottom right there is the files/plot panel, and top right is the environment panel.
 
-There are three ways of running R code: console, scripts and R Markdown. In this tutorial we will cover the console and scripts. 
+If your installation of R and RStudio has worked, first RStudio should be open, and second you should see a message in your console panel telling you the version of R you have installed, like the image below.
+
+![R version displayed in RStudio console](images/r-version.png)
+
+There are three ways of running R code: console, scripts and R Markdown. In this tutorial we will cover the console and scripts.
 
 The best way to get comfortable with a software is to start using it! We will run through series of exercises which will help you get more comfortable writing and running R code. The exercises include:
 
-*   Calculate the weighted average of a students university studies for 1 year
-*   Perform some descriptive statistics of Christiano Ronaldo career statistics up till 2020, and make a few simple visualisations
+-   Performing some calculations using R
+-   Convert your height from centimetres to feet and metres
+-   Calculate body mass index (BMI) and waist-to-hip ratio
 
-# Exercise 1 - Running code from the console
+## Exercise 1 - Running code from the console
 
-The first thing we want to try is to run code from the console and see what happens. 
+The first thing we want to try is to run code from the console and see what happens. To run code from the console you type the code and press enter. Remember the console has the `>` symbol.
 
-In RStudio, in the console, try and calculate the sum of 5 and 14. 
+In RStudio, in the console, try the following calculations:
 
-*hint: you can use the + symbol*
+1)  Sum of 5 and 14.
+2)  Divide 9.6 by 1.6
+3)  3 to the power of 12 subtracted from 4. *Hint: use brackets* `(x-y)^z`
+4)  Divide 22 by 36 and multiply the result by 100
+5)  The remainder of 55 divided by 2
 
-You should see an output like: `r paste0("[1] 19")`
+The output for each question should be:
 
-# Exercise 2 - Assigning variables (still in the console)
+1)  `r paste0("[1] ", 5+14)`
+2)  `r paste0("[1] ", 9.6/1.6)`
+3)  `r paste0("[1] ", (12-4)^3)`
+4)  `r paste0("[1] ", (22/36) * 100)`
+5)  `r paste0("[1] ", 55%%2)`
 
-In R, when we want to keep data and re-use it later, we *assign* that data to a name. There are two ways of doing this. We can use the arrow like `<-` or the `=` symbol; the arrow is most commonly used in R. 
+|      Operator       | Symbol |
+|:-------------------:|:------:|
+|        Plus         |  `+`   |
+|       Divide        |  `/`   |
+|      Subtract       |  `-`   |
+|      Multiply       |  `*`   |
+|        Power        |  `^`   |
+| Remainder (modulus) |  `%%`  |
 
-If we wanted to *assign* our numbers from our previous calculation we would do: `a <- 5` and `b <- 14`. These are called *variables*.
+: Table of some simple mathematical operators used in R to help you out {.striped .hover}
 
-In your console: 
+## Exercise 2 - Assigning variables (still in the console)
 
-1) Assign 5 to `a`
-2) Assign 14 to `b`
-3) Calculate the sum of `a` and `b`, and assign the result to `c` 
-4) Type `c` and hit enter in your console. What happened?
+In R, when we want to keep data and re-use it later, we **assign** that data to a name. There are two ways of doing this. We can use the arrow like `<-` or the `=` symbol; the arrow is most commonly used in R.
 
-In your *environment* panel, you should see: *add image here*
+If we wanted to **assign** our numbers from one of our previous calculations and use them for a calculation we would do: `a <- 9.6` and `b <- 1.6`, then `a / b`. These are called *variables*.
 
-# Exercise 3 - making a new R script
+In your console:
 
-Scripts are a useful way of remembering what we have done previously, allowing us to save code and share it with others. 
+1)  Assign 5 to `a`
+2)  Assign 14 to `b`
+3)  Calculate the sum of `a` and `b`, and assign the result to `c`
+4)  Type `c` and hit enter in your console. What happened?
 
-In this exercise we are going to open a script, and save it. 
+In your *environment* panel, you should see: ![](images/ex2.png)
 
-1) In the top left corner of RStudio you should see a paper icon with a plus symbol. Click on it and select **R Script** 
-2) Now the script is open, save the script as something like `r-pre-sessional.R`. There are a few ways of doing this, pressing `command/ctrl + s` is the simplest method
-3) Lets try and run some code. In this example, you want to convert your running time in minutes to seconds. In the script, type or copy the following code:
+## Exercise 3 - making a new R script
+
+Scripts are a useful way of remembering what we have done previously, allowing us to save code and share it with others.
+
+In this exercise we are going to open a script, and save it.
+
+1)  We have a few options to open a script, the simplest is to use a shortcut: `shift + command/ctrl + N`. You can also open it manually by going the top left corner of RStudio, you should see a paper icon with a plus symbol. Click on it and select **R Script**
+2)  Now the script is open, save the script as something like `r-pre-sessional.R`. There are a few ways of doing this, pressing `command/ctrl + s` is the simplest method
+3)  Lets try and run some code. In this example, you want to convert your running time in minutes to seconds. In the script, type or copy the following code:
 
 ```{r run-example}
 #| code-fold: false
@@ -225,125 +262,212 @@ run_seconds <- run_minutes*60
 run_seconds
 ```
 
-4) Now run the code! There are two main ways of doing this. First, we can highlight the code, and click the `Run` button near the top centre right of RStudio. Second, we can put our cursor on each line and use `command/ctrl + enter` to run the code line by line. 
-5) The result of your code will appear in the console and should look like: `r paste0('[1] ', 1580.4)`
+4)  Now run the code! There are two main ways of doing this. First, we can highlight the code, and click the `Run` button near the top centre right of RStudio. Second, we can put our cursor on each line and use `command/ctrl + enter` to run the code line by line.
+5)  The result of your code will appear in the console and should look like: `r paste0('[1] ', 26.34*60)`
 
-We will write more code in this script in the following exercise! 
+We will write more code in this script in the following exercise!
 
-# Exercise 4 - degree calculation
+::: callout-note
+In the code example, we have hash tags (`#`). These are ***comments***, which allow us to write non-code information. This is helpful to document what each step is doing.
+:::
 
-For this exercise, we are going to calculate the overall grade for a student to see if they get a 1st, 2.1 or 2.2 degree. For simplicity, we will only work this out for 1 year of study. To help with this exercise, we have a few formulas to help you along the way! 
+## Exercise 4 - height metrics conversion
 
-Formula for weighted grade of 1 module:
+In this exercise we are going to convert your height from centimetres to feet and meters. Below are some formulas to help you make the calculations in the exercises.
 
-`MODULE 1 TOTAL = [CREDITS OF THE UNIT]/[TOTAL CREDITS] X [MODULE GRADE]`
+`centimetres to feet = [height in cm X 0.0328084]`
 
-For the full calculation, we add the above formula together for each module:
+`centimetres to meters = [height in cm / 100]`
 
-`DEGREE TOTAL = [MODULE 1 TOTAL] + [MODULE 2 TOTAL] + [MODULE 3 TOTAL] + [MODULE 4 TOTAL]`
-
-Our student takes 4 modules, worth 30 credits each, with the following grades: 
-
-*   Module 1: 66
-*   Module 2: 81
-*   Module 3: 57
-*   Module 4: 71
+`feet to meters = [height in ft X 0.3048]`
 
 In the script we made in exercise 3, try the following exercises:
 
-1) For each module, assign the result, for example `module_1 <- 66`
-2) Create a variable called `unit_credits`, which is the amount of credits each module is worth
-3) Create a variable called `total_credits`, which is the total number of credits of the 4 modules
-4) Now calculate the final grade for the student. You will need to use brackets for each module calculation, such as: `(unit credits / total credits * module grade) + ...` 
+1)  Make a variable called `my_height`, and assign 195 as the height
+2)  Convert the value of `my_height` from centimetres to feet. Make a new variable called `my_height_ft`, and assign the calculation of `my_height` in cm to feet
+3)  Print your `my_height_ft` variable
+4)  Convert the value of `my_height` from centimetres to meters. Make a new variable called `my_height_m`, and assign the calculation of `my_height` in centimetres to meters
+5)  Print your `my_height_m` variable
+6)  Convert the value of `my_height_ft` from feet to meters. Make a new variable called `my_height_ft_m`, and assign the calculation of `my_height` in centimetres to meters
+7)  Print your `my_height_ft_m` variable
+8)  Now try and do the calculations for your own height, or an estimate if you are not sure! You can just change the value of `my_height`
 
-```{r degree-calc, echo=FALSE}
-module_1 <- 66
-module_2 <- 81
-module_3 <- 57
-module_4 <- 71
-
-total_credits <- 120
-unit_credits <- 30
-
-final_grade <- (unit_credits/total_credits * module_1) + (unit_credits/total_credits * module_2) + (unit_credits/total_credits * module_3) + (unit_credits/total_credits * module_4)
-```
-
-You should get a final grade of: `r final_grade`
-
-# Exercise 5 - loading R scripts
-
-In the next two exercises we will be loading a pre-prepared script and doing some coding with it. 
-
-1) Click on the Download R file button and save the file where you saved your other R script
-
-{{< downloadthis resources/example.R label='Download R file' dname=example icon=code type=primary >}}
-
-2) Now open the file into R. You should be able to use the file menu to achieve this: `File > Open File...`
-3) With the file you should see some pre-written code. Run all the code
-4) What appeared in the *files panel*? Looking at the code in the script, what function do you think made the figure?
-
-In the next exercise, we explain a bit more about the code, make a few more visuals, and run some summary statistics. 
-
-# Exercise 6 - Christiano Ronaldo career statistics
-
-In the R script we loaded in the previous exercise, you might have noticed code that has numbers wrapped in brackets like: `c(1,2,3)`. These are called *vectors*. A vector is a set of information contained together in a specific order; in this case, numbers.
-
-To make vectors we have combined variables together using the `c()` function, which concatenates the numbers together. You can tell something is a function if it has `()`. 
-
-The calculation we did (`x + y`) will add *elementwise*, which in English means it will add the first element of x by the first element of y, and carry on until all elements are added. 
-
-With all that in mind, lets try and do some coding! We will be looking at Christiano Ronaldo's goals and appearances up till 2021.
-
-```{r c-ronaldo}
-#| code-fold: false
+```{r height-metrics}
 #| echo: false
 
-appearances <- c(2, 31, 40, 50, 47, 53, 49, 53, 35, 54, 55, 55, 47, 54, 48, 46, 44, 43, 46, 44)
-goals <- c(0, 5, 6, 9, 12, 23, 42, 26, 33, 53, 60, 55, 51, 61, 51, 42, 44, 28, 37, 36)
+my_height <- 195
+cm_to_ft <- 0.0328084
+cm_to_m <- 100
+ft_to_m <- 0.3048
+
+my_height_ft <-  my_height * cm_to_ft
+
+my_height_m <- my_height / cm_to_m
+
+my_height_ft_m <- my_height_ft * ft_to_m
 ```
 
-*Hint: to use a function, we have to put a vector inside the brackets, like `sum(x)`*
+Using a value of `my_height` as 195cm, we would expect to get the outputs of:
 
-1) Use the `sum()` function to find out the total number of appearances. You should get: `r sum(appearances)`
-2) Use the `sum()` function to find out the total number of goals. You should get: `r sum(goals)`
-3) It would be interesting to find the goal ratio for each season. Divide goals by appearances and assign the result to `goal_ratio`
-4) Use the `summary()` function with `goal_ratio` vector you just made. What was his highest goal ratio? 
-5) Use the `hist()` function on the `goal_ratio` vector and review the result
+-   centimetres to feet: `r paste0('[1] ', my_height_ft)`
+-   centimetres to meters: `r paste0('[1] ', my_height_m)`
+-   feet to meters: `r paste0('[1] ', my_height_ft_m)`
 
--------------------------------------
+::: callout-important
+## What does *print* mean?
 
-# What are my next steps?
+When we say *"print a value"*, which is to display the output of an object, we mean for you to type a variable and run it, such as typing `my_height` and pressing `command/ctrl + enter` to view the result in the console
+:::
 
-If you are on the modules show below, it is recommended you attend the in-person pre-sessional training workshops the Digital Skills Lab will be running through September to early October. 
+## Exercise 5 - loading R scripts
 
-*List of modules here* 
+In the next two exercises we will be loading a pre-prepared script and doing some coding with it.
 
-Students not on these modules are very welcome to join the in-person pre-sessional training, particularly if you have struggled to get R installed, and want to get a better understanding of R. 
+1)  Click on the Download R file button and save the file where you saved your other R script
 
-Add graphic here
+{{< downloadthis resources/exercises.R label='Download R file' dname=exercises icon=r-circle type=success >}}
 
-![](images/pre-sessional-outline.png)
+2)  Now open the file into R. You should be able to use the file menu to achieve this: `File > Open File...`
+3)  Within the file you should see some pre-written code. Run all the code
+4)  What output appeared in the console? Assuming this person is a man, what would their health risk be according to the below table?
 
-Explain steps
+| **Health risk** |   **Women**    |    **Men**    |
+|:---------------:|:--------------:|:-------------:|
+|       low       | 0.80 or lower  | 0.95 or lower |
+|    moderate     |   0.81-0.85    |   0.96-1.0    |
+|      high       | 0.86 or higher | 1.0 or higher |
 
-Move to final remarks about extra support
+: Waist-to-hip ratio chart {.striped .hover}
 
-# What other support is available?
+In the next exercise, you will do another health related calculation, working out how to calculate body mass index (BMI)
 
-Outside the pre-sessional workshops, the Digital Skills Lab will be running R workshops from October-December, then January-March, and again May-July. 
+::: callout-note
+## What is waist-to-hip ratio?
 
-There will also be drop-in advice and 1-2-1 services available throughout the year. 
+The [waist-to-hip ratio](https://www.healthline.com/health/waist-to-hip-ratio#:~:text=0.9%20or%20less%20in%20men,0.85%20or%20less%20for%20women) metric is another measure of health that is designed to look for people at higher risk of conditions like heart disease or type 2 diabetes.
+:::
+
+## Exercise 6 - Body mass index (BMI) calculation
+
+Use R to work out the body mass index (BMI) of someone who is 94kg, and 1.95m tall.
+
+In the script we loaded in exercise 5:
+
+1)  Assign the variables of weight and height
+2)  Assign the variable of BMI, and calculate the BMI based of the weight and height variables
+3)  Print the outcome
+4)  Add comments on what each line of code is doing
+
+You can find the formula for BMI on the [NHS website](https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/#:~:text=The%20BMI%20calculation%20divides%20an,dividing%2070%20by%202.99%20%3D%2023.41)
+
+```{r bmi}
+#| echo: false
+
+# assign variables of weight and height
+weight <- 94
+height <- 1.95
+
+# BMI calculation
+BMI <- weight/(height^2)
+
+# print outcome
+#BMI
+```
+
+You should get an output of `r paste0("[1] ", BMI)`
+
+------------------------------------------------------------------------
+
+# Note on R and RStudio
+
+You might be asking yourself, why have I installed R ***and*** RStudio?
+
+An abridged answer to this question is R is the language we will be using, and RStudio is the environment in which we will be using R.
+
+The unabridged answer is that R is a computer language, which means it cannot be opened like other computer applications such as an internet explorer (Chrome or Firefox) or Microsoft Word. Instead, to use R you write commands in the R language and ask your computer to interpret them. Previously, this would involve typing commands into a terminal application, or writing a script in a text editing software and running it through a terminal application. This is not the *easiest* way of writing R code, and is where RStudio comes in!
+
+RStudio is an application, like Google Chrome or Firefox, which means it is easy to open on your computer. RStudio is a popular tool for using R, as it provides an pleasant interface for you to use R, with helpful features like the auto-completion, file management, and an environment panel to show/explore your data.
+
+::: callout-tip
+## What is the terminal?
+
+The terminal is a program that you use to type in commands that are then executed by your computer's operating system. It is a text input/output environment
+:::
+
+# What are my next steps? {#sec-steps}
+
+If you are on the modules show below, it is recommended you attend the in-person pre-sessional training workshops the Digital Skills Lab will be running through September to early October.
+
+-   MY452/552
+-   MY455/555
+-   MY472
+-   MY457/557
+-   MY474/574
+-   MY461/561
+-   MY459/559
+-   DS105
+-   DS202
+
+Students not on these modules are very welcome to join the in-person pre-sessional training, particularly if you have struggled to get R installed, found the exercises difficult, or want to get a better understanding of R.
+
+## R Pre-Sessional in-person workshops {#sec-workshops}
+
+The pre-sessional workshops are two hour long, in-person practical workshops to help you learn R. You will be working through practical exercises, designed to build your knowledge in R, while being supported by a team of data science trainers.
+
+The content for these workshops will cover the key fundamental knowledge needed for using the R programming language. The content is split into worksheets which gradually progress you through topics. These topics include, but are not limited to:
+
+-   Working with different data types in R such as numerical, text, categorical, data frames (spreadsheet like data structures), matrices, and lists
+
+-   Learning to manipulate these data types to extract what information you need, and perform operations on them
+
+-   Using conditional operations to manipulate data
+
+-   Using functions, built in code, to perform a wide array of operations like finding the mean
+
+-   Loading datasets into R, and handling some common issues
+
+-   Automating code, using tools like a for loop
+
+-   Streamline your code by writing your own functions
+
+These workshops will be run on a regular basis through September and early October. Dates and times for the in-person workshops:
+
+| Date            | Time  | Location             |
+|-----------------|-------|----------------------|
+| 12th September  | 10-12 | LSE Life Workspace 4 |
+| 14th September  | 10-12 | LSE Life Workspace 4 |
+| 15th September  | 10-12 | LSE Life Workspace 4 |
+| 26th September  | 1-3   | LSE Life Workspace 4 |
+| 27th September  | 10-12 | LSE Life Workspace 4 |
+| 29th September  | 10-12 | LSE Life Workspace 4 |
+| 2nd October     | 10-12 | LSE Life Workspace 4 |
+| 3rd October     | 10-12 | LSE Life Workspace 4 |
+| 4th October     | 10-12 | LSE Life Workspace 4 |
+
+: Dates, times, and location of R pre-sessional workshops
+
+**Attendance to the workshops is through booking only**. To book onto the workshops, you will need to follow this link:
+
+::: callout-important
+These workshops will be popular and there will be a maximum capacity. If you can no longer attend, please cancel your booking so another student can book.
+:::
+
+## What other support is available? {#sec-support}
+
+Outside the pre-sessional workshops, the Digital Skills Lab will be running R workshops from October-December, then January-March, and again May-July.
+
+There will also be drop-in advice and 1-2-1 services available throughout the year.
 
 You can find out more information on the courses and support the Digital Skills Lab offers via [our webpage](https://info.lse.ac.uk/current-students/digital-skills-lab).
 
+For help or other general queries please contact `digital.skills.lab@lse.ac.uk`.
+
 # Final remarks
 
-This tutorial was written by the DSL in support for the Statistics and Methodology departments, and the Data Science Institute. We hope that you found it helpful in getting started with R. 
+This tutorial was written by the DSL in support for the Statistics and Methodology departments, and the Data Science Institute. We hope that you found it helpful in getting started with R.
 
 ```{r dsl_image, echo=FALSE}
 knitr::include_graphics("images/DigitalSkillsLab.png")
 #"E73736"
 #"#EFEEF3"
 ```
-
-
