@@ -30,11 +30,11 @@ css: css/styles.css
 
 # Introduction to the pre-sessional for R
 
-This webpage contains instructions on how to install R on your laptop and some exercises to get you started with R.
-
-This tutorial must be completed before you join the in-person R pre-sessional workshops run by the Digital Skills Lab (DSL).
+This webpage contains instructions on how to install R on your laptop and some exercises to get you started with R. This tutorial must be completed before you join the in-person R pre-sessional workshops run by the Digital Skills Lab (DSL).
 
 This tutorial and follow up in-person R pre-sessional workshops are part of your pre-sessional programme. They are designed to help you get up to speed with R which you will be using in your modules. Once you have completed this tutorial, see @sec-steps for information on what happens next.
+
+The tutorial should take around **45 minutes to 1 hour** to complete.
 
 ## Who is this pre-sessional for?
 
@@ -67,7 +67,7 @@ This tutorial is for all students who will be taking the following modules:
 
 After having completed this tutorial, you will be able to:
 
--   Install R and Rstudio
+-   Install R and RStudio
 -   Run R code in the console
 -   Open and run R scripts
 -   Write code in R scripts
@@ -212,11 +212,11 @@ The best way to get comfortable with a software is to start using it! We will ru
 
 ## Exercise 1 - Running code from the console
 
-The first thing we want to try is to run code from the console and see what happens. To run code from the console you type the code and press enter. Remember the console has the `>` symbol.
+The first thing we want to try is to run code from the console and see what happens. To run code from the console you type the code and press enter. Remember the console has the `>` symbol, and is the bottom left panel.
 
 In RStudio, in the console, try the following calculations:
 
-1)  Sum of 5 and 14.
+1)  Sum of 5 and 14
 2)  Divide 9.6 by 1.6
 3)  3 to the power of 12 subtracted from 4. *Hint: use brackets* `(x-y)^z`
 4)  Divide 22 by 36 and multiply the result by 100
@@ -245,7 +245,7 @@ The output for each question should be:
 
 In R, when we want to keep data and re-use it later, we **assign** that data to a name. There are two ways of doing this. We can use the arrow like `<-` or the `=` symbol; the arrow is most commonly used in R.
 
-If we wanted to **assign** our numbers from one of our previous calculations and use them for a calculation we would do: `a <- 9.6` and `b <- 1.6`, then `a / b`. These are called *variables*.
+If we wanted to **assign** our numbers from one of our previous calculations and use them for a new calculation we would do: `a <- 9.6` and `b <- 1.6`, then `a / b`. In this example, `a` and `b` are called *variables*.
 
 In your console:
 
@@ -285,7 +285,7 @@ run_seconds
 
 We will write more code in this script in the following exercise!
 
-::: callout-note
+::: callout-tip
 In the code example, we have hash tags (`#`). These are ***comments***, which allow us to write non-code information. This is helpful to document what each step is doing.
 :::
 
@@ -302,11 +302,11 @@ In this exercise we are going to convert your height from centimetres to feet an
 In the script we made in exercise 3, try the following exercises:
 
 1)  Make a variable called `my_height`, and assign 195 as the height
-2)  Convert the value of `my_height` from centimetres to feet. Make a new variable called `my_height_ft`, and assign the calculation of `my_height` in cm to feet
+2)  Convert the value of `my_height` from centimetres to feet. Make a new variable called `my_height_ft`, and assign the calculation of `my_height` from centimetres to feet
 3)  Print your `my_height_ft` variable
-4)  Convert the value of `my_height` from centimetres to meters. Make a new variable called `my_height_m`, and assign the calculation of `my_height` in centimetres to meters
+4)  Convert the value of `my_height` from centimetres to meters. Make a new variable called `my_height_m`, and assign the calculation of `my_height` from centimetres to meters
 5)  Print your `my_height_m` variable
-6)  Convert the value of `my_height_ft` from feet to meters. Make a new variable called `my_height_ft_m`, and assign the calculation of `my_height` in centimetres to meters
+6)  Convert the value of `my_height_ft` from feet to meters. Make a new variable called `my_height_ft_m`, and assign the calculation of `my_height_ft` from feet to meters
 7)  Print your `my_height_ft_m` variable
 8)  Now try and do the calculations for your own height, or an estimate if you are not sure! You can just change the value of `my_height`
 
@@ -383,11 +383,15 @@ You can find the formula for BMI on the [NHS website](https://www.nhs.uk/live-we
 
 You should get an output of [1] 24.7205785667324
 
+::: callout-tip
+The height in this calculation should be in meters. For example, someone who is 170cm tall, would be 1.70m tall in meters. 
+:::
+
 ------------------------------------------------------------------------
 
 # Note on R and RStudio
 
-You might be asking yourself, why have I installed R ***and*** RStudio?
+You might be asking yourself, why have I installed R ***and*** RStudio? Or why am I using RStudio and not just R?
 
 An abridged answer to this question is R is the language we will be using, and RStudio is the environment in which we will be using R.
 
@@ -403,7 +407,7 @@ The terminal is a program that you use to type in commands that are then execute
 
 # What are my next steps? {#sec-steps}
 
-If you are on the modules show below, it is recommended you attend the in-person pre-sessional training workshops the Digital Skills Lab will be running through September to early October.
+If you are on the modules show below, it is recommended you attend the in-person pre-sessional training workshops the Digital Skills Lab (DSL) will be running through September to early October.
 
 ::: columns
 ::: {.column width="50%"}
@@ -462,7 +466,7 @@ These workshops will be run on a regular basis through September and early Octob
 **Attendance to the workshops is through booking only**. To book onto the workshops, you will need to [follow this booking link](https://apps.lse.ac.uk/training-system/userBooking/course/9999199)
 
 ::: callout-important
-These workshops will be popular and there will be a maximum capacity. If you can no longer attend, please cancel your booking so another student can book.
+These workshops will be popular and there will be a maximum capacity. If you can no longer attend, please cancel your booking on the *Training and Development System* so another student can book.
 :::
 
 ## What other support is available? {#sec-support}
@@ -479,7 +483,7 @@ For help or other general queries please contact `digital.skills.lab@lse.ac.uk`.
 
 # Accessing and opening the in-person pre-sessional materials (optional extra)
 
-As an optional extra, you can prepare for the in-person workshops by accessing the materials for the workshops. Below is some information on how to do this. 
+As an optional extra, you can prepare for the in-person workshops by accessing the materials for the workshops. Below is information and steps on how to do this. 
 
 ## Access to the DSL-R-Presessional team on MS Teams
 
@@ -514,7 +518,7 @@ You'll be introduced to R Markdown in the workshops. An in-depth description can
 
 ## Opening the R Markdown files
 
-Opening a R Markdown file is very similar to opening a script in R using `File > Open File...`
+Opening a R Markdown file is very similar to opening a script in R using `File > Open File...`. R Markdown files have the extension `.Rmd`. 
 
 How to use and work with R Markdown files will be covered in the in-person workshops. 
 
