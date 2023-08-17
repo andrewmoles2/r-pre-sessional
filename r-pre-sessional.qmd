@@ -28,6 +28,14 @@ css: css/styles.css
 
 # Introduction to the pre-sessional for R
 
+This webpage contains instructions on how to install R on your laptop and some exercises to get you started with R.
+
+This tutorial must be completed before you join the in-person R pre-sessional workshops run by the Digital Skills Lab (DSL).
+
+This tutorial and follow up in-person R pre-sessional workshops are part of your pre-sessional programme. They are designed to help you get up to speed with R which you will be using in your modules. Once you have completed this tutorial, see @sec-steps for information on what happens next.
+
+## Who is this pre-sessional for?
+
 This tutorial is for all students who will be taking the following modules:
 
 ::: columns
@@ -52,22 +60,28 @@ This tutorial is for all students who will be taking the following modules:
 :::
 :::
 
-For your pre-sessional programme for these modules, this is the first part. See @sec-steps for information on what happens after completing this tutorial.
+
+## Tutorial Learning Outcomes
 
 After having completed this tutorial, you will be able to:
 
 -   Install R and Rstudio
+-   Run R code in the console
 -   Open and run R scripts
 -   Write code in R scripts
 
+This tutorial is a step-by-step guide to get you started. Try not to skip any of the sections. You can use the table of contents on the right hand side to help you navigate sections. 
+
+::: {.callout-important}
 If you struggle with any of the steps from this tutorial, we recommend the following:
 
--   Come to the pre-sessional workshops, as detailed in @sec-workshops, to get help and learn more about R
+-   Come to the in-person R pre-sessional, as detailed in @sec-workshops, to get help and learn more about R
 -   Seek support from our online 1-2-1 or drop-in advice, as detailed in the @sec-support section
+:::
 
 # Installing R and RStudio
 
-Below are step by step instructions for getting R and RStudio installed in your personal laptop.
+The first stage of this tutorial is getting R and RStudio installed on your laptop so you can start using R! Below are step by step instructions for getting the software needed installed.
 
 ## Windows install
 
@@ -398,15 +412,21 @@ The terminal is a program that you use to type in commands that are then execute
 
 If you are on the modules show below, it is recommended you attend the in-person pre-sessional training workshops the Digital Skills Lab will be running through September to early October.
 
+::: columns
+::: {.column width="50%"}
 -   MY452/552
 -   MY455/555
 -   MY472
 -   MY457/557
 -   MY474/574
+:::
+::: {.column width="50%"}
 -   MY461/561
 -   MY459/559
 -   DS105
 -   DS202
+:::
+:::
 
 Students not on these modules are very welcome to join the in-person pre-sessional training, particularly if you have struggled to get R installed, found the exercises difficult, or want to get a better understanding of R.
 
@@ -446,7 +466,7 @@ These workshops will be run on a regular basis through September and early Octob
 
 : Dates, times, and location of R pre-sessional workshops
 
-**Attendance to the workshops is through booking only**. To book onto the workshops, you will need to follow this link:
+**Attendance to the workshops is through booking only**. To book onto the workshops, you will need to [follow this booking link](https://apps.lse.ac.uk/training-system/userBooking/course/9999199)
 
 ::: callout-important
 These workshops will be popular and there will be a maximum capacity. If you can no longer attend, please cancel your booking so another student can book.
@@ -462,9 +482,58 @@ You can find out more information on the courses and support the Digital Skills 
 
 For help or other general queries please contact `digital.skills.lab@lse.ac.uk`.
 
+---------
+
+# Accessing and opening the in-person pre-sessional materials (optional extra)
+
+As an optional extra, you can prepare for the in-person workshops by accessing the materials for the workshops. Below is some information on how to do this. 
+
+## Access to the DSL-R-Presessional team on MS Teams
+
+The materials for the workshops will be hosted/stored on MS Teams. They are R Markdown files. 
+
+1) Go to the Teams overview in MS Teams, which can be accessed from the sidebar on the left.
+2) Select the **Join or create team** option on the top right.
+3) Enter the team code **cfwj2ed**
+4) Click Join Team.
+
+![](images/teams1.png){width="49%"} ![](images/teams2.png){width="49%"}
+
+## Download the R Markdown files
+
+1) Go to the Teams overview in MS Teams, which can be accessed from the sidebar on the left.
+2) Select the DSL-R-Presessional team.
+3) Select the R Markdown Notebooks channel.
+4) Select the Files tab to access the R markdown notebooks.
+5) Select all items in the folder.
+6) Download the files. You might need to select the three dot icon to access the Download option.
+7) Click Download to download all R markdown notebooks as a zip file.
+
+![](images/download_files.png){width="75%" fig-align="center"}
+
+::: callout-tip
+### What is R Markdown?
+
+An R Markdown file has sections of text and code together in a single document. This is helpful for tutorials, documentation, and writing reports.
+
+You'll be introduced to R Markdown in the workshops. An in-depth description can be found in the [R for Data Science](https://r4ds.had.co.nz/r-markdown.html) open source book
+:::
+
+## Opening the R Markdown files
+
+Opening a R Markdown file is very similar to opening a script in R using `File > Open File...`
+
+How to use and work with R Markdown files will be covered in the in-person workshops. 
+
+::: callout-note
+If you struggle with any of these steps, just come along to the workshops and a trainer can help you. 
+:::
+
+------------
+
 # Final remarks
 
-This tutorial was written by the DSL in support for the Statistics and Methodology departments, and the Data Science Institute. We hope that you found it helpful in getting started with R.
+This tutorial was written by the Digital Skills Lab (DSL) in support for the Statistics and Methodology departments, and the Data Science Institute. We hope that you found it helpful in getting started with R.
 
 ```{r dsl_image, echo=FALSE}
 knitr::include_graphics("images/DigitalSkillsLab.png")
