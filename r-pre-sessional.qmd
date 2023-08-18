@@ -208,6 +208,8 @@ The best way to get comfortable with a software is to start using it! We will ru
 -   Convert your height from centimetres to feet and metres
 -   Calculate body mass index (BMI) and waist-to-hip ratio
 
+If you get stuck on the exercises, or would prefer to follow along with a video to solve the exercises, see @sec-solution. 
+
 ## Exercise 1 - Running code from the console
 
 The first thing we want to try is to run code from the console and see what happens. To run code from the console you type the code and press enter. Remember the console has the `>` symbol, and is the bottom left panel.
@@ -254,7 +256,7 @@ In your console:
 
 In your *environment* panel, you should see: ![](images/ex2.png)
 
-## Exercise 3 - making a new R script
+## Exercise 3 - Making a new R script
 
 Scripts are a useful way of remembering what we have done previously, allowing us to save code and share it with others.
 
@@ -285,7 +287,7 @@ We will write more code in this script in the following exercise!
 In the code example, we have hash tags (`#`). These are ***comments***, which allow us to write non-code information. This is helpful to document what each step is doing.
 :::
 
-## Exercise 4 - height metrics conversion
+## Exercise 4 - Height metrics conversion
 
 In this exercise we are going to convert your height from centimetres to feet and meters. Below are some formulas to help you make the calculations in the exercises.
 
@@ -333,7 +335,9 @@ Using a value of `my_height` as 195cm, we would expect to get the outputs of:
 When we say *"print a value"*, which is to display the output of an object, we mean for you to type a variable and run it, such as typing `my_height` and pressing `command/ctrl + enter` to view the result in the console
 :::
 
-## Exercise 5 - loading R scripts
+Remember, if you get stuck, try watching the video solution in @sec-solution. 
+
+## Exercise 5 - Loading R scripts
 
 In the next two exercises we will be loading a pre-prepared script and doing some coding with it.
 
@@ -411,6 +415,40 @@ RStudio is an application, like Google Chrome or Firefox, which means it is easy
 
 The terminal is a program that you use to type in commands that are then executed by your computer's operating system. It is a text input/output environment
 :::
+
+---------
+
+# Video solutions of exercises {#sec-solution}
+
+To help with the exercises, we have a series of short video solutions made by the author of this tutorial. 
+
+You can either use these videos to follow along, or as a tool for finding the solutions to the exercises. 
+
+## Exercise 1 solution - Running code from the console
+
+![Solution to first exercise of doing calculations in the R console](resources/video-solutions/exercise1.mp4)
+
+## Exercise 2 solution - Assigning variables (still in the console)
+
+![Solution to the second exercise of assigning variables in the R console, then doing a calculation](resources/video-solutions/exercise2.mp4)
+
+## Exercise 3 solution - Making a new R script
+
+![Solution to the third exercise of opening a script, copying and pasting code into the script, and then running code in the script](resources/video-solutions/exercise3.mp4)
+
+## Exercise 4 solution - Height metrics conversion
+
+![Solution to the fourth exercise of performing calculations within a script, using calculations to convert height metrics](resources/video-solutions/exercise4.mp4)
+
+## Exercise 5 solution - Loading R scripts
+
+![Solution to the fifth exercise of downloading and then loading a script into R, then running the code in the script](resources/video-solutions/exercise5.mp4)
+
+## Exercise 6 solution - Body mass index (BMI) calculation
+
+![Solution to the sixth exercise of performing BMI calculations within a script](resources/video-solutions/exercise6.mp4)
+
+---------
 
 # What are my next steps? {#sec-steps}
 
