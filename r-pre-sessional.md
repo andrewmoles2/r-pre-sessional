@@ -62,7 +62,6 @@ This tutorial is for all students who will be taking the following modules:
 :::
 :::
 
-
 ## Tutorial Learning Outcomes
 
 After having completed this tutorial, you will be able to:
@@ -72,9 +71,9 @@ After having completed this tutorial, you will be able to:
 -   Open and run R scripts
 -   Write code in R scripts
 
-This tutorial is a step-by-step guide to get you started. Try not to skip any of the sections. You can use the table of contents on the right hand side to help you navigate sections. 
+This tutorial is a step-by-step guide to get you started. Try not to skip any of the sections. You can use the table of contents on the right hand side to help you navigate sections.
 
-::: {.callout-important}
+::: callout-important
 If you struggle with any of the steps from this tutorial, we recommend the following:
 
 -   Come to the in-person R pre-sessional, as detailed in @sec-workshops, to get help and learn more about R
@@ -153,7 +152,7 @@ It will be simplest, if you have faced installation issues, for you to come to a
 
 # Why R?
 
-LSE Statistics and methodology courses primarily use R. This is because R is a excellent tool for:
+LSE Methodology courses primarily use R. This is because R is a excellent tool for:
 
 -   Statistics
 -   Data handling (i.e. cleaning and manipulating data)
@@ -210,7 +209,7 @@ The best way to get comfortable with a software is to start using it! We will ru
 -   Convert your height from centimetres to feet and metres
 -   Calculate body mass index (BMI) and waist-to-hip ratio
 
-If you get stuck on the exercises, or would prefer to follow along with a video to solve the exercises, see @sec-solution. 
+If you get stuck on the exercises, or would prefer to follow along with a video to solve the exercises, see @sec-solution.
 
 ## Exercise 1 - Running code from the console
 
@@ -295,11 +294,11 @@ In the code example, we have hash tags (`#`). These are ***comments***, which al
 
 In this exercise we are going to convert your height from centimetres to feet and meters. Below are some formulas to help you make the calculations in the exercises.
 
-`centimetres to feet = [height in cm X 0.0328084]`
+-   **centimetres to feet**: $heightcm X 0.0328084$
 
-`centimetres to meters = [height in cm / 100]`
+-   **centimetres to meters**: $heightcm / 100$
 
-`feet to meters = [height in ft X 0.3048]`
+-   **feet to meters**: $heightft X 0.3048$
 
 In the script we made in exercise 3, try the following exercises:
 
@@ -330,7 +329,7 @@ Using a value of `my_height` as 195cm, we would expect to get the outputs of:
 When we say *"print a value"*, which is to display the output of an object, we mean for you to type a variable and run it, such as typing `my_height` and pressing `command/ctrl + enter` to view the result in the console
 :::
 
-Remember, if you get stuck, try watching the video solution in @sec-solution. 
+Remember, if you get stuck, try watching the video solution in @sec-solution.
 
 ## Exercise 5 - Loading R scripts
 
@@ -388,7 +387,7 @@ You can find the formula for BMI on the [NHS website](https://www.nhs.uk/live-we
 You should get an output of [1] 24.7205785667324
 
 ::: callout-tip
-The height in this calculation should be in meters. For example, someone who is 170cm tall, would be 1.70m tall in meters. 
+The height in this calculation should be in meters. For example, someone who is 170cm tall, would be 1.70m tall in meters.
 :::
 
 ------------------------------------------------------------------------
@@ -409,13 +408,13 @@ RStudio is an application, like Google Chrome or Firefox, which means it is easy
 The terminal is a program that you use to type in commands that are then executed by your computer's operating system. It is a text input/output environment
 :::
 
----------
+------------------------------------------------------------------------
 
 # Video solutions of exercises {#sec-solution}
 
-To help with the exercises, we have a series of short video solutions made by the author of this tutorial. 
+To help with the exercises, we have a series of short video solutions made by the author of this tutorial.
 
-You can either use these videos to follow along, or as a tool for finding the solutions to the exercises. 
+You can either use these videos to follow along, or as a tool for finding the solutions to the exercises.
 
 ## Exercise 1 solution - Running code from the console
 
@@ -441,7 +440,7 @@ You can either use these videos to follow along, or as a tool for finding the so
 
 ![Solution to the sixth exercise of performing BMI calculations within a script](resources/video-solutions/exercise6.mp4)
 
----------
+------------------------------------------------------------------------
 
 # What are my next steps? {#sec-steps}
 
@@ -455,6 +454,7 @@ If you are on the modules show below, it is recommended you attend the in-person
 -   MY457/557
 -   MY474/574
 :::
+
 ::: {.column width="50%"}
 -   MY461/561
 -   MY459/559
@@ -517,32 +517,32 @@ You can find out more information on the courses and support the Digital Skills 
 
 For help or other general queries please contact `digital.skills.lab@lse.ac.uk`.
 
----------
+------------------------------------------------------------------------
 
 # Accessing and opening the in-person pre-sessional materials (optional extra)
 
-As an optional extra, you can prepare for the in-person workshops by accessing the materials for the workshops. Below is information and steps on how to do this. 
+As an optional extra, you can prepare for the in-person workshops by accessing the materials for the workshops. Below is information and steps on how to do this.
 
 ## Access to the DSL-R-Presessional team on MS Teams
 
-The materials for the workshops will be hosted/stored on MS Teams. They are R Markdown files. 
+The materials for the workshops will be hosted/stored on MS Teams. They are R Markdown files.
 
-1) Go to the Teams overview in MS Teams, which can be accessed from the sidebar on the left.
-2) Select the **Join or create team** option on the top right.
-3) Enter the team code **cfwj2ed**
-4) Click Join Team.
+1)  Go to the Teams overview in MS Teams, which can be accessed from the sidebar on the left.
+2)  Select the **Join or create team** option on the top right.
+3)  Enter the team code **cfwj2ed**
+4)  Click Join Team.
 
 ![](images/teams1.png){width="49%"} ![](images/teams2.png){width="49%"}
 
 ## Download the R Markdown files
 
-1) Go to the Teams overview in MS Teams, which can be accessed from the sidebar on the left.
-2) Select the DSL-R-Presessional team.
-3) Select the R Markdown Notebooks channel.
-4) Select the Files tab to access the R markdown notebooks.
-5) Select all items in the folder.
-6) Download the files. You might need to select the three dot icon to access the Download option.
-7) Click Download to download all R markdown notebooks as a zip file.
+1)  Go to the Teams overview in MS Teams, which can be accessed from the sidebar on the left.
+2)  Select the DSL-R-Presessional team.
+3)  Select the R Markdown Notebooks channel.
+4)  Select the Files tab to access the R markdown notebooks.
+5)  Select all items in the folder.
+6)  Download the files. You might need to select the three dot icon to access the Download option.
+7)  Click Download to download all R markdown notebooks as a zip file.
 
 ![](images/download_files.png){width="75%" fig-align="center"}
 
@@ -556,19 +556,19 @@ You'll be introduced to R Markdown in the workshops. An in-depth description can
 
 ## Opening the R Markdown files
 
-Opening a R Markdown file is very similar to opening a script in R using `File > Open File...`. R Markdown files have the extension `.Rmd`. 
+Opening a R Markdown file is very similar to opening a script in R using `File > Open File...`. R Markdown files have the extension `.Rmd`.
 
-How to use and work with R Markdown files will be covered in the in-person workshops. 
+How to use and work with R Markdown files will be covered in the in-person workshops.
 
 ::: callout-note
-If you struggle with any of these steps, just come along to the workshops and a trainer can help you. 
+If you struggle with any of these steps, just come along to the workshops and a trainer can help you.
 :::
 
-------------
+------------------------------------------------------------------------
 
 # Final remarks
 
-This tutorial was written by the Digital Skills Lab (DSL) in support for the Statistics and Methodology departments, and the Data Science Institute. We hope that you found it helpful in getting started with R.
+This tutorial was written by the Digital Skills Lab (DSL) in support for the Methodology department and the Data Science Institute. We hope that you found it helpful in getting started with R.
 
 
 ::: {.cell}
