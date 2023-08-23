@@ -469,7 +469,9 @@ Students not on these modules are very welcome to join the in-person pre-session
 
 The pre-sessional workshops are two hour long, in-person practical workshops to help you learn R. You will be working through practical exercises, designed to build your knowledge in R, while being supported by a team of data science trainers.
 
-The content for these workshops will cover the key fundamental knowledge needed for using the R programming language. The content is split into worksheets which gradually progress you through topics. These topics include, but are not limited to:
+The content for these workshops will cover the key fundamental knowledge needed for using the R programming language. The content is split into worksheets which gradually progress you through topics. 
+
+These topics include, but are not limited to:
 
 -   Working with different data types in R such as numerical, text, categorical, data frames (spreadsheet like data structures), matrices, and lists
 
@@ -485,6 +487,12 @@ The content for these workshops will cover the key fundamental knowledge needed 
 
 -   Streamline your code by writing your own functions
 
+The exact flow of the worksheets and topics covered is shown in the flow diagram below.
+
+
+![Flow and topics covered in the R Pre-Sessional workshops](https://github.com/andrewmoles2/graphviz-figures/blob/main/figures/programming_R_series.png?raw=true){width="75%"}
+
+
 These workshops will be run on a regular basis through September and early October. Dates and times for the in-person workshops:
 
 | Date            | Time  | Location             |
@@ -492,10 +500,14 @@ These workshops will be run on a regular basis through September and early Octob
 | 12th September  | 10-12 | LSE Life Workspace 4 |
 | 14th September  | 10-12 | LSE Life Workspace 4 |
 | 15th September  | 10-12 | LSE Life Workspace 4 |
+| 18th September  | 11-13 | LRB R.08 |
+| 19th September  | 11-13 | LRB R.08 |
+| 20th September  | 11-13 | LRB R.08 |
+| 21st September  | 11-13 | LRB R.08 |
+| 22nd September  | 11-13 | LRB R.08 |
 | 26th September  | 1-3   | LSE Life Workspace 4 |
 | 27th September  | 10-12 | LSE Life Workspace 4 |
 | 29th September  | 10-12 | LSE Life Workspace 4 |
-| 2nd October     | 10-12 | LSE Life Workspace 4 |
 | 3rd October     | 10-12 | LSE Life Workspace 4 |
 | 4th October     | 10-12 | LSE Life Workspace 4 |
 
@@ -544,7 +556,7 @@ The materials for the workshops will be hosted/stored on MS Teams. They are R Ma
 6)  Download the files. You might need to select the three dot icon to access the Download option.
 7)  Click Download to download all R markdown notebooks as a zip file.
 
-![](images/download_files.png){width="75%" fig-align="center"}
+![](images/download_files.png){width="90%" fig-align="center"}
 
 ::: callout-tip
 ### What is R Markdown?
