@@ -28,15 +28,21 @@ css: css/styles.css
 
 # Introduction to the pre-sessional for R
 
-This webpage contains instructions on how to install R on your laptop and some exercises to get you started with R. This tutorial must be completed before you join the in-person R pre-sessional workshops run by the Digital Skills Lab (DSL).
+The pre-sessional for R is split into two stages. First, is this self-paced webpage tutorial, second is in-person workshops which are detailed in @sec-workshops.
+
+This webpage tutorial contains instructions on how to install R on your laptop and some exercises to get you started with R. This tutorial must be completed before you join the in-person R pre-sessional workshops run by the Digital Skills Lab (DSL).
 
 This tutorial and follow up in-person R pre-sessional workshops are part of your pre-sessional programme. They are designed to help you get up to speed with R which you will be using in your modules. Once you have completed this tutorial, see @sec-steps for information on what happens next.
 
-The tutorial should take around **45 minutes to 1 hour** to complete.
+## What do I need to do and who is this pre-sessional for?
 
-## Who is this pre-sessional for?
+1.  Use this self-paced tutorial to get R and RStudio installed, and get to grips with loading and using R scripts. This should take around **45 minutes to 1 hour** to complete
 
-This tutorial is for all students who will be taking the following modules:
+2.  Come to the in-person workshops, and complete 7 notebooks on Fundamentals in R (DSI Students should complete the full 10 notebooks). This will take approximately **7 hours** for the Fundamentals materials, and **10 hours** for the full series so we recommend you book and attend 3-5 sessions: [follow this link to book](https://apps.lse.ac.uk/training-system/userBooking/course/9999199)
+
+    -   To save time at the start of the workshops, have a go at accessing the materials. See @sec-option for information
+
+This tutorial is for all students who will be taking the following modules. It is strongly advised that you run through this self-paced webpage tutorial:
 
 ::: columns
 ::: {.column width="50%"}
@@ -60,6 +66,25 @@ This tutorial is for all students who will be taking the following modules:
 :::
 :::
 
+If you are on the following modules, it is advised that you come to the pre-sessional workshops, detailed in @sec-workshops, to get a better understanding of R:
+
+::: columns
+::: {.column width="50%"}
+-   MY452/552
+-   MY455/555
+-   MY472
+-   MY457/557
+-   MY474/574
+:::
+
+::: {.column width="50%"}
+-   MY461/561
+-   MY459/559
+-   DS105
+-   DS202
+:::
+:::
+
 ## Tutorial Learning Outcomes
 
 After having completed this tutorial, you will be able to:
@@ -74,7 +99,7 @@ This tutorial is a step-by-step guide to get you started. Try not to skip any of
 ::: callout-important
 If you struggle with any of the steps from this tutorial, we recommend the following:
 
--   Come to the in-person R pre-sessional, as detailed in @sec-workshops, to get help and learn more about R
+-   Come to the in-person R pre-sessional, as detailed in @sec-workshops, to get help and learn more about R. See @sec-booking for how to book
 -   Seek support from our online 1-2-1 or drop-in advice, as detailed in the @sec-support section
 :::
 
@@ -146,7 +171,7 @@ To run R on a Mac operating system, XQuartz is required. You can install it by f
 
 If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you will have to install an older version of the software.
 
-It will be simplest, if you have faced installation issues, for you to come to a R pre-sessional workshop for support. See @sec-workshops for more information.
+It will be simplest, if you have faced installation issues, for you to come to a R pre-sessional workshop for support. See @sec-booking for more information on how to book.
 
 # Why R?
 
@@ -451,7 +476,7 @@ You can either use these videos to follow along, or as a tool for finding the so
 
 # What are my next steps? {#sec-steps}
 
-If you are on the modules show below, it is recommended you attend the in-person pre-sessional training workshops the Digital Skills Lab (DSL) will be running through September to early October.
+If you are on the modules shown below, it is recommended you attend the in-person pre-sessional training workshops the Digital Skills Lab (DSL) will be running through September to early October.
 
 ::: columns
 ::: {.column width="50%"}
@@ -476,7 +501,9 @@ Students not on these modules are very welcome to join the in-person pre-session
 
 The pre-sessional workshops are two hour long, in-person practical workshops to help you learn R. You will be working through practical exercises, designed to build your knowledge in R, while being supported by a team of data science trainers.
 
-The content for these workshops will cover the key fundamental knowledge needed for using the R programming language. The content is split into worksheets which gradually progress you through topics. 
+The content for these workshops will cover the key fundamental knowledge needed for using the R programming language. The content is split into worksheets which gradually progress you through topics.
+
+Completing all the worksheets will take **around 10 hours** to complete.
 
 These topics include, but are not limited to:
 
@@ -494,24 +521,20 @@ These topics include, but are not limited to:
 
 -   Streamline your code by writing your own functions
 
-The exact flow of the worksheets and topics covered is shown in the flow diagram below.
-
-
 ![Flow and topics covered in the R Pre-Sessional workshops](https://github.com/andrewmoles2/graphviz-figures/blob/main/figures/programming_R_series.png?raw=true){width="75%"}
 
-
-These workshops will be run on a regular basis through September and early October. Dates and times for the in-person workshops:
+These workshops will be run on a regular basis through September and early October.
 
 | Date            | Time  | Location             |
 |-----------------|-------|----------------------|
 | 12th September  | 10-12 | LSE Life Workspace 4 |
 | 14th September  | 10-12 | LSE Life Workspace 4 |
 | 15th September  | 10-12 | LSE Life Workspace 4 |
-| 18th September  | 11-13 | LRB R.08 |
-| 19th September  | 11-13 | LRB R.08 |
-| 20th September  | 11-13 | LRB R.08 |
-| 21st September  | 11-13 | LRB R.08 |
-| 22nd September  | 11-13 | LRB R.08 |
+| 18th September  | 11-13 | LRB R.08             |
+| 19th September  | 11-13 | LRB R.08             |
+| 20th September  | 11-13 | LRB R.08             |
+| 21st September  | 11-13 | LRB R.08             |
+| 22nd September  | 11-13 | LRB R.08             |
 | 26th September  | 1-3   | LSE Life Workspace 4 |
 | 27th September  | 10-12 | LSE Life Workspace 4 |
 | 29th September  | 10-12 | LSE Life Workspace 4 |
@@ -519,6 +542,8 @@ These workshops will be run on a regular basis through September and early Octob
 | 4th October     | 10-12 | LSE Life Workspace 4 |
 
 : Dates, times, and location of R pre-sessional workshops
+
+## Booking in-person workshops {#sec-booking}
 
 **Attendance to the workshops is through booking only**. To book onto the workshops, you will need to [follow this booking link](https://apps.lse.ac.uk/training-system/userBooking/course/9999199)
 
@@ -538,7 +563,7 @@ For help or other general queries please contact `digital.skills.lab@lse.ac.uk`.
 
 ------------------------------------------------------------------------
 
-# Accessing and opening the in-person pre-sessional materials (optional extra)
+# Accessing and opening the in-person pre-sessional materials (optional extra) {#sec-option}
 
 As an optional extra, you can prepare for the in-person workshops by accessing the materials for the workshops. Below is information and steps on how to do this.
 
@@ -570,17 +595,29 @@ The materials for the workshops will be hosted/stored on MS Teams. They are R Ma
 
 An R Markdown file has sections of text and code together in a single document. This is helpful for tutorials, documentation, and writing reports.
 
-You'll be introduced to R Markdown in the workshops. An in-depth description can be found in the [R for Data Science](https://r4ds.had.co.nz/r-markdown.html) open source book
+An in-depth description can be found in the [R for Data Science](https://r4ds.had.co.nz/r-markdown.html) open source book
 :::
 
 ## Opening the R Markdown files
 
 Opening a R Markdown file is very similar to opening a script in R using `File > Open File...`. R Markdown files have the extension `.Rmd`.
 
-How to use and work with R Markdown files will be covered in the in-person workshops.
+## Using a R Markdown file
+
+We are using R Markdown notebooks for these workshops as we can add text around code, which can help us guide you. The image below shows the basic layout of a R Markdown document.
+
+![Image of R Markdown notebook, indicating the text and code sections](images/R-Markdown.png){width="90%" fig-align="center"}
+
+There are three ways to run code in a code cell. The two ways mentioned in the image (Run and play button), and third is to use `ctrl/command + Enter` to run each like just like you would with an R script.
+
+The most important thing for you to take note of is the code cells. Each code cell is like a small R script. You'll notice the \`\`\` markings around the code cell. It is important these do not get deleted, so be careful when editing your code!
+
+Finally, you can add your own code cell using `option+command+i` on a Mac or `ctrl + alt + i` on a Windows machine.
+
+Throughout the notebooks you will come across exercises, with empty code cells for you to type your code into. Your task is to test out the examples, then try and do the exercises.
 
 ::: callout-note
-If you struggle with any of these steps, just come along to the workshops and a trainer can help you.
+If you have struggled with any of these steps, just come along to the workshops and ask a trainer for support
 :::
 
 ------------------------------------------------------------------------
