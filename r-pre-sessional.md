@@ -520,10 +520,7 @@ These workshops will be run on a regular basis through September and early Octob
 
 | Date            | Time  | Location             |
 |-----------------|-------|----------------------|
-| 12th September  | 10-12 | LSE Life Workspace 4 |
 | 14th September  | 10-12 | LSE Life Workspace 4 |
-| 15th September  | 10-12 | LSE Life Workspace 4 |
-| 18th September  | 11-13 | LRB R.08             |
 | 19th September  | 11-13 | LRB R.08             |
 | 20th September  | 11-13 | LRB R.08             |
 | 21st September  | 11-13 | LRB R.08             |
