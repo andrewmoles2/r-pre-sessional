@@ -10,7 +10,7 @@ format:
   html:
     toc: true
     toc-depth: 4
-    toc-location: right
+    toc-location: left
     #toc-expand: false
     code-fold: true
     keep-md: true
@@ -562,32 +562,33 @@ For help or other general queries please contact `digital.skills.lab@lse.ac.uk`.
 
 ------------------------------------------------------------------------
 
-# Accessing and opening the in-person pre-sessional materials (optional extra) {#sec-option}
+# Workshop materials {#sec-option}
 
-As an optional extra, you can prepare for the in-person workshops by accessing the materials for the workshops. Below is information and steps on how to do this.
+## Workshop format
 
-## Access to the DSL-R-Presessional team on MS Teams
+*   Each workshop is 2 hours long
+*   You choose which topic to work on. It is advised to work through the materials in the prescribed order unless you are already familiar with a particular topic
+*   You will work with fellow learners, utilising your prior experience and web searches to find solutions, with a R expert on hand if you get stuck
+*   Workshop sessions are hands on and practical 
 
-The materials for the workshops will be hosted/stored on MS Teams. They are R Markdown files.
 
-1)  Go to the Teams overview in MS Teams, which can be accessed from the sidebar on the left.
-2)  Select the **Join or create team** option on the top right.
-3)  Enter the team code **cfwj2ed**
-4)  Click Join Team.
-
-![](images/teams1.png){width="49%"} ![](images/teams2.png){width="49%"}
+To prepare for the in-person workshops you need to get the materials. Below is information and steps on how to do this.
 
 ## Download the R Markdown files
 
-1)  Go to the Teams overview in MS Teams, which can be accessed from the sidebar on the left.
-2)  Select the DSL-R-Presessional team.
-3)  Select the R Markdown Notebooks channel.
-4)  Select the Files tab to access the R markdown notebooks.
-5)  Select all items in the folder.
-6)  Download the files. You might need to select the three dot icon to access the Download option.
-7)  Click Download to download all R markdown notebooks as a zip file.
+The files for the workshops can be downloaded from the button below:
 
-![](images/download_files.png){width="90%" fig-align="center"}
+{{< downloadthis resources/r-markdown-notebooks/R_pre_sessional_files.zip label='Download R pre-sessional files' dname=r-markdown-files icon=r-circle type=success >}}
+
+Once downloaded it is important that you ***unzip/uncompress*** the file. The download is a zip file, which a file that has been compressed to save space for easier transfer and storage. You should uncompress these files otherwise it can be hard for some software to use the files inside. 
+
+**Windows**
+
+Right-click on the file and choose *Extract All*, then select a location to save the uncompressed file. 
+
+**Mac**
+
+Double click on the file and the uncompressed contents will appear next to your compressed file. 
 
 ::: callout-tip
 ### What is R Markdown?
