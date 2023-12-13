@@ -514,24 +514,18 @@ These topics include, but are not limited to:
 
 -   Streamline your code by writing your own functions
 
-![Flow and topics covered in the R Pre-Sessional workshops](https://github.com/andrewmoles2/graphviz-figures/blob/main/figures/programming_R_series.png?raw=true){width="75%"}
+![Flow and topics covered in the R Pre-Sessional workshops](https://github.com/andrewmoles2/graphviz-figures/blob/main/figures/programming_R_series.png?raw=true){width="55%"}
 
 These workshops will be run on a regular basis through September and early October.
 
-| Date            | Time  | Location             |
-|-----------------|-------|----------------------|
-| 14th September  | 10-12 | LSE Life Workspace 4 |
-| 15th September  | 10-12 | LSE Life Workspace 4 |
-| 18th September  | 11-13 | LRB R.08             |
-| 19th September  | 11-13 | LRB R.08             |
-| 20th September  | 11-13 | LRB R.08             |
-| 21st September  | 11-13 | LRB R.08             |
-| 22nd September  | 11-13 | LRB R.08             |
-| 26th September  | 1-3   | LSE Life Workspace 4 |
-| 27th September  | 10-12 | LSE Life Workspace 4 |
-| 29th September  | 10-12 | LSE Life Workspace 4 |
-| 3rd October     | 10-12 | LSE Life Workspace 4 |
-| 4th October     | 10-12 | LSE Life Workspace 4 |
+| Date                   | Time  | Location             |
+|------------------------|-------|----------------------|
+| Monday 15th January    | 13-15 | LSE Life Workspace 4 |
+| Tuesday 16th January   | 13-15 | LSE Life Workspace 4 |
+| Monday 22nd January    | 13-15 | LSE Life Workspace 4 |
+| Wednesday 24th January | 13-15 | LSE Life Workspace 4 |
+| Monday 29th January    | 13-15 | LSE Life Workspace 4 |
+| Tuesday 30th January   | 13-15 | LSE Life Workspace 4 |
 
 : Dates, times, and location of R pre-sessional workshops
 
@@ -559,11 +553,10 @@ For help or other general queries please contact `digital.skills.lab@lse.ac.uk`.
 
 ## Workshop format
 
-*   Each workshop is 2 hours long
-*   You choose which topic to work on. It is advised to work through the materials in the prescribed order unless you are already familiar with a particular topic
-*   You will work with fellow learners, utilising your prior experience and web searches to find solutions, with a R expert on hand if you get stuck
-*   Workshop sessions are hands on and practical 
-
+-   Each workshop is 2 hours long
+-   You choose which topic to work on. It is advised to work through the materials in the prescribed order unless you are already familiar with a particular topic
+-   You will work with fellow learners, utilising your prior experience and web searches to find solutions, with a R expert on hand if you get stuck
+-   Workshop sessions are hands on and practical
 
 To prepare for the in-person workshops you need to get the materials. Below is information and steps on how to do this.
 
@@ -579,15 +572,15 @@ The files for the workshops can be downloaded from the button below:
 
 
 
-Once downloaded it is important that you ***unzip/uncompress*** the file. The download is a zip file, which a file that has been compressed to save space for easier transfer and storage. You should uncompress these files otherwise it can be hard for some software to use the files inside. 
+Once downloaded it is important that you ***unzip/uncompress*** the file. The download is a zip file, which a file that has been compressed to save space for easier transfer and storage. You should uncompress these files otherwise it can be hard for some software to use the files inside.
 
 **Windows**
 
-Right-click on the file and choose *Extract All*, then select a location to save the uncompressed file. 
+Right-click on the file and choose *Extract All*, then select a location to save the uncompressed file.
 
 **Mac**
 
-Double click on the file and the uncompressed contents will appear next to your compressed file. 
+Double click on the file and the uncompressed contents will appear next to your compressed file.
 
 ::: callout-tip
 ### What is R Markdown?
@@ -618,6 +611,26 @@ Throughout the notebooks you will come across exercises, with empty code cells f
 ::: callout-note
 If you have struggled with any of these steps, just come along to the workshops and ask a trainer for support
 :::
+
+## Getting started with the notebooks
+
+The R Markdown notebooks have a series of explanations, examples, and exercises for you to work through. You will be working through a series of exercises to build your skills using R.
+
+What to do when you get stuck:
+
+1.  **Search online**: Being able to search for relevant information online by formulating your problem as an effective search term is a highly important skill for programmers at all levels of proficiency.
+
+2.  Check with the people sitting around you. In a real job, you would seek help from your colleagues and friends, so start that now. If you don't know the person next to you, introduce yourself now.
+
+3.  Ask the **trainer** if you struggle to find a solution.
+
+The below image is a screenshot of one of the R Markdown notebooks which should guide you on how to get started using them. 
+
+![Image of R Markdown fundamentals notebook, to guide on how to use the notebooks](images/using_notebooks.png){width="90%" fig-align="center"}
+
+You can also use the visual mode in RStudio, which can make using the notebooks easier. To do so click the tab in the top left corner of RStudio that says visual. The image below shows the visual mode.
+
+![Image of R Markdown fundamentals notebook, to guide on how to use the notebooks](images/using_notebooks_visual.png){width="90%" fig-align="center"}
 
 ------------------------------------------------------------------------
 

@@ -113,9 +113,9 @@ Finally, we can use the indexing to perform calculations on elements of the matr
 
 ```{r}
 # sum the first col
-sum(mat[, 2])
-# sum second col
 sum(mat[, 1])
+# sum second col
+sum(mat[, 2])
 # sum both cols
 sum(mat)
 ```
@@ -600,7 +600,7 @@ legend("topleft", legend = levels(dino_class),
 
 We would be grateful if you could take a minute before the end of the workshop so we can get your feedback!
 
-<https://lse.eu.qualtrics.com/jfe/form/SV_2beTiFd70AlRe5M?coursename=R%Fundamentals%7:%Lists%and%Matrices&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:u:/s/DSL-R-Presessional9-SolutionsandTrainerMaterials/ERA0ug5YCJRPtnkQqOi_fDQBGTs5oI-KwRLY6Lq89GQlew?e=gDzO9h>
+<https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Fundamentals%7:%Lists%and%Matrices&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/Et1Q00_hUB9Iv3NaRfEoRzIBXFH_Ui3ZpdEFmbIKdgCCmw?e=qeYzZ7>
 
 # Individual take home challenge
 
