@@ -626,11 +626,11 @@ What to do when you get stuck:
 
 The below image is a screenshot of one of the R Markdown notebooks which should guide you on how to get started using them. 
 
-![Image of R Markdown fundamentals notebook, to guide on how to use the notebooks](images/using_notebooks.png){width="90%" fig-align="center"}
+![Image of R Markdown fundamentals notebook to guide on how to use the notebooks](images/using_notebooks.png){width="90%" fig-align="center"}
 
 You can also use the visual mode in RStudio, which can make using the notebooks easier. To do so click the tab in the top left corner of RStudio that says visual. The image below shows the visual mode.
 
-![Image of R Markdown fundamentals notebook, to guide on how to use the notebooks](images/using_notebooks_visual.png){width="90%" fig-align="center"}
+![Image of R Markdown fundamentals notebook, in visual mode, to guide on how to use the notebooks](images/using_notebooks_visual.png){width="90%" fig-align="center"}
 
 ------------------------------------------------------------------------
 
