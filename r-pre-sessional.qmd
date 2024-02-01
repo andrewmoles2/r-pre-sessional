@@ -94,7 +94,7 @@ After having completed this tutorial, you will be able to:
 -   Open and run R scripts
 -   Write code in R scripts
 
-This tutorial is a step-by-step guide to get you started. Try not to skip any of the sections. You can use the table of contents on the right hand side to help you navigate sections.
+This tutorial is a step-by-step guide to get you started. Try not to skip any of the sections. You can use the table of contents on the left hand side to help you navigate sections.
 
 ::: callout-important
 If you struggle with any of the steps from this tutorial, we recommend the following:
@@ -242,7 +242,7 @@ In RStudio, in the console, try the following calculations:
 
 1)  Sum of 5 and 14
 2)  Divide 9.6 by 1.6
-3)  3 to the power of 12 subtracted from 4. *Hint: use brackets* `(x-y)^z`
+3)  12 minus 4 to the power of 3 *Hint: use brackets* `(x-y)^z`
 4)  Divide 22 by 36 and multiply the result by 100
 5)  The remainder of 55 divided by 2
 
@@ -315,11 +315,11 @@ In the code example, we have hash tags (`#`). These are ***comments***, which al
 
 In this exercise we are going to convert your height from centimetres to feet and meters. Below are some formulas to help you make the calculations in the exercises.
 
--   **centimetres to feet**: $heightcm X 0.0328084$
+-   **centimetres to feet**: $heightcm \times 0.0328084$
 
--   **centimetres to meters**: $heightcm / 100$
+-   **centimetres to meters**: $heightcm \div 100$
 
--   **feet to meters**: $heightft X 0.3048$
+-   **feet to meters**: $heightft \times 0.3048$
 
 In the script we made in exercise 3, try the following exercises:
 
@@ -400,7 +400,7 @@ In the script we loaded in exercise 5:
 3)  Print the outcome
 4)  Add comments on what each line of code is doing
 
-You can find the formula for BMI on the [NHS website](https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/#:~:text=The%20BMI%20calculation%20divides%20an,dividing%2070%20by%202.99%20%3D%2023.41)
+You can find the formula for BMI on the [British Heart Foundation website](https://extras.bhf.org.uk/patientinfo/bmi-v1.01/app/index.html)
 
 ```{r bmi}
 #| echo: false
@@ -432,12 +432,12 @@ An abridged answer to this question is R is the language we will be using, and R
 
 The unabridged answer is that R is a computer language, which means it cannot be opened like other computer applications such as an internet explorer (Chrome or Firefox) or Microsoft Word. Instead, to use R you write commands in the R language and ask your computer to interpret them. Previously, this would involve typing commands into a terminal application, or writing a script in a text editing software and running it through a terminal application. This is not the *easiest* way of writing R code, and is where RStudio comes in!
 
-RStudio is an application, like Google Chrome or Firefox, which means it is easy to open on your computer. RStudio is a popular tool for using R, as it provides an pleasant interface for you to use R, with helpful features like the auto-completion, file management, and an environment panel to show/explore your data.
+RStudio is an application, like Google Chrome or Firefox, which means it is easy to open on your computer. RStudio is a popular tool for using R, as it provides a pleasant interface for you to use R, with helpful features like the auto-completion, file management, and an environment panel to show/explore your data.
 
 ::: callout-tip
 ## What is the terminal?
 
-The terminal is a program that you use to type in commands that are then executed by your computer's operating system. It is a text input/output environment
+The terminal is a program that you use to type in commands that are then executed by your computer's operating system. It is a text input/output environment.
 :::
 
 ------------------------------------------------------------------------
@@ -601,7 +601,7 @@ We are using R Markdown notebooks for these workshops as we can add text around 
 
 ![Image of R Markdown notebook, indicating the text and code sections](images/R-Markdown.png){width="90%" fig-align="center"}
 
-There are three ways to run code in a code cell. The two ways mentioned in the image (Run and play button), and third is to use `ctrl/command + Enter` to run each like just like you would with an R script.
+There are three ways to run code in a code cell. The two ways mentioned in the image (Run and play button), and third is to use `ctrl/command + Enter` to run each line just like you would with an R script.
 
 The most important thing for you to take note of is the code cells. Each code cell is like a small R script. You'll notice the \`\`\` markings around the code cell. It is important these do not get deleted, so be careful when editing your code!
 
