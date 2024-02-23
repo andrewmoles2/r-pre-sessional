@@ -309,7 +309,7 @@ MaxMin
 
 We would be grateful if you could take a minute before the end of the workshop so we can get your feedback!
 
-<https://lse.eu.qualtrics.com/jfe/form/SV_2beTiFd70AlRe5M?coursename=R%Fundamentals%2:%Vectors,%Functions,%and%Indexing&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:u:/s/DSL-R-Presessional9-SolutionsandTrainerMaterials/EYqGFAcYLMhHvY4aD3bJT-8Bia9gFwGbQG2XYKh-AVCXxg?e=Q0pgWl>
+<https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Fundamentals%2:%Vectors,%Functions,%and%Indexing&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EmUo-IOFzsxFjPujn5poqp4BKnYT46Eg1qoA5o1fSHr6Lw?e=UGNzwj>
 
 # Individual coding challenge 1
 
