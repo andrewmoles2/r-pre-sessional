@@ -9,8 +9,8 @@ date: today
 format:
   html:
     toc: true
-    toc-depth: 4
-    toc-location: left
+    toc-depth: 1
+    toc-location: right-body
     #toc-expand: false
     code-fold: true
     keep-md: true
@@ -28,90 +28,56 @@ css: css/styles.css
 
 # Introduction to the pre-sessional for R
 
-The pre-sessional for R is split into two stages. First, is this self-paced webpage tutorial, second is in-person workshops which are detailed in @sec-workshops.
+The R pre-sessional workshops are designed to help you get started with R which you will need for some modules during your degree programme. For example, students who will take a Methodology module will likely be using R in those seminars. 
 
-This webpage tutorial contains instructions on how to install R on your laptop and some exercises to get you started with R. This tutorial must be completed before you join the in-person R pre-sessional workshops run by the Digital Skills Lab (DSL).
+This webpage contains information on: 
 
-This tutorial and follow up in-person R pre-sessional workshops are part of your pre-sessional programme. They are designed to help you get up to speed with R which you will be using in your modules. Once you have completed this tutorial, see @sec-steps for information on what happens next.
+*   Instructions on how to install R onto your laptop   
+*   Why would we want to learn R    
+*   The pre-sessional materials    
+*   Getting started instructions    
 
-## What do I need to do and who is this pre-sessional for?
+## Information on the workshops
 
-1.  Use this self-paced tutorial to get R and RStudio installed, and get to grips with loading and using R scripts. This should take around **45 minutes to 1 hour** to complete
+The pre-sessional workshops are two hour long, in-person practical workshops to help you learn R. You will be working through practical exercises, designed to build your knowledge in R, while being supported by a team of data science trainers.
 
-2.  Come to the in-person workshops, and complete 7 notebooks on Fundamentals in R (DSI Students should complete the full 10 notebooks). This will take approximately **7 hours** for the Fundamentals materials, and **10 hours** for the full series so we recommend you book and attend 3-5 sessions: [follow this link to book](https://apps.lse.ac.uk/training-system/userBooking/course/9999199)
+The content for these workshops will cover the key fundamental knowledge needed for using the R programming language. The content is split into worksheets which gradually progress you through topics.
 
-    -   To save time at the start of the workshops, have a go at accessing the materials. See @sec-option for information
+Completing all the worksheets will take **around 15 hours** to complete. Completing the fundamentals materials will take around **7 hours**. 
 
-This tutorial is for all students who will be taking the following modules. It is strongly advised that you run through this self-paced webpage tutorial:
+These topics include, but are not limited to:
 
-::: columns
-::: {.column width="50%"}
--   MY360/361
--   MY451A
--   MY452A
--   MY464
--   MY470
--   MY472
--   MY452/552
-:::
+-   Working with different data types in R such as numerical, text, categorical, data frames (spreadsheet like data structures), matrices, and lists
 
-::: {.column width="50%"}
--   MY455/55/MY472
--   MY457/557
--   MY474/574
--   MY461/561
--   MY459/559
--   DS105
--   DS202
-:::
-:::
+-   Learning to manipulate these data types to extract what information you need, and perform operations on them
 
-If you are on the following modules, it is advised that you come to the pre-sessional workshops, detailed in @sec-workshops, to get a better understanding of R:
+-   Using conditional operations to manipulate data
 
-::: columns
-::: {.column width="50%"}
--   MY452/552
--   MY455/555
--   MY472
--   MY457/557
--   MY474/574
-:::
+-   Using functions, built in code, to perform a wide array of operations like finding the mean
 
-::: {.column width="50%"}
--   MY461/561
--   MY459/559
--   DS105
--   DS202
-:::
-:::
+-   Loading datasets into R, and handling some common issues
 
-## Tutorial Learning Outcomes
+-   Using external packages, such as the popular *tidyverse* set of packages, to subset, modify, and aggregate your data
 
-After having completed this tutorial, you will be able to:
+-   Create an array of data visualisations to understand your data better
 
--   Install R and RStudio
--   Run R code in the console
--   Open and run R scripts
--   Write code in R scripts
+-   Automating code, using tools like a for loop
 
-This tutorial is a step-by-step guide to get you started. Try not to skip any of the sections. You can use the table of contents on the left hand side to help you navigate sections.
+-   Streamline your code by writing your own functions
 
-::: callout-important
-If you struggle with any of the steps from this tutorial, we recommend the following:
+Below is a diagramme showing how all the worksheets interact which should help you know where to start, and where you are going. 
 
--   Come to the in-person R pre-sessional, as detailed in @sec-workshops, to get help and learn more about R. See @sec-booking for how to book
--   Seek support from our online 1-2-1 or drop-in advice, as detailed in the @sec-support section
-:::
+![Flow diagram showing the full R series of workshops and a recommended route](https://github.com/andrewmoles2/graphviz-figures/blob/main/figures/full_R_series.png?raw=true){width="80%"}
 
 # Installing R and RStudio
 
-The first stage of this tutorial is getting R and RStudio installed on your laptop so you can start using R! Below are step by step instructions for getting the software needed installed.
+Below are step by step instructions for getting the R and RStudio installed on your own laptop.
 
 ## Windows install
 
 ### Install R
 
--   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/windows/)
+-   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/windows/){target="_blank"}
 
 -   Click on either **base** or **install R for the first time**
 
@@ -121,7 +87,7 @@ The first stage of this tutorial is getting R and RStudio installed on your lapt
 
 ### Install RStudio
 
--   To install RStudio we download it from the [Posit website](https://posit.co/download/rstudio-desktop/)
+-   To install RStudio we download it from the [Posit website](https://posit.co/download/rstudio-desktop/){target="_blank"}
 
 -   Click on the **Download RStudio Desktop** link
 
@@ -141,7 +107,7 @@ To install R on your Mac you need to know the type of processor your Mac uses. T
 
 #### M1 or M2 Mac
 
--   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/macosx/)
+-   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/macosx/){target="_blank"}
 
 -   If you have a *M1 Mac* you will need click on the link the contains **arm64** to download R. It will look something like `R-4.3.1-arm64.pkg`
 
@@ -149,7 +115,7 @@ To install R on your Mac you need to know the type of processor your Mac uses. T
 
 #### Intel Mac
 
--   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/macosx/)
+-   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/macosx/){target="_blank"}
 
 -   If you have a *Intel Mac* you will need to click on the link that just contains the version of R. It will look something like `R-4.3.1.pkg`, and can be located a touch further down the page under the header **Binaries for legacy macOS/OS X systems:**
 
@@ -157,11 +123,11 @@ To install R on your Mac you need to know the type of processor your Mac uses. T
 
 ### Install XQuartz
 
-To run R on a Mac operating system, XQuartz is required. You can install it by following [this link](https://www.xquartz.org/), downloading it and following the installation instructions.
+To run R on a Mac operating system, XQuartz is required. You can install it by following [this link](https://www.xquartz.org/){target="_blank"}, downloading it and following the installation instructions.
 
 ### Install RStudio
 
--   To install RStudio we download it from the [Posit website](https://posit.co/download/rstudio-desktop/)
+-   To install RStudio we download it from the [Posit website](https://posit.co/download/rstudio-desktop/){target="_blank"}
 
 -   Click on the **Download RStudio Desktop** link
 
@@ -169,13 +135,28 @@ To run R on a Mac operating system, XQuartz is required. You can install it by f
 
 ## Installing R and RStudio installation issues
 
-If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you will have to install an older version of the software.
+If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you will have to install an older version of the software. Speak with a trainer if you had difficulties with the install. 
 
-It will be simplest, if you have faced installation issues, for you to come to a R pre-sessional workshop for support. See @sec-booking for more information on how to book.
+## Note on R and RStudio
+
+You might be asking yourself, why have I installed R ***and*** RStudio? Or why am I using RStudio and not just R?
+
+An abridged answer to this question is R is the language we will be using, and RStudio is the environment in which we will be using R.
+
+The unabridged answer is that R is a computer language, which means it cannot be opened like other computer applications such as an internet explorer (Chrome or Firefox) or Microsoft Word. Instead, to use R you write commands in the R language and ask your computer to interpret them. Previously, this would involve typing commands into a terminal application, or writing a script in a text editing software and running it through a terminal application. This is not the *easiest* way of writing R code, and is where RStudio comes in!
+
+RStudio is an application, like Google Chrome or Firefox, which means it is easy to open on your computer. RStudio is a popular tool for using R, as it provides a pleasant interface for you to use R, with helpful features like the auto-completion, file management, and an environment panel to show/explore your data.
+
+::: callout-tip
+## What is the terminal?
+
+The terminal is a program that you use to type in commands that are then executed by your computer's operating system. It is a text input/output environment.
+:::
+
 
 # Why R?
 
-LSE Methodology courses primarily use R. This is because R is a excellent tool for:
+A lot of LSE courses, such as those in the Methodology Department, primarily use R. This is because R is a excellent tool for:
 
 -   Statistics
 -   Data handling (i.e. cleaning and manipulating data)
@@ -190,13 +171,15 @@ Some cool things you can do in R:
 
 ![Animated gif of rainfall and temperature changes over time in Australian cities](https://github.com/andrewmoles2/TidyTuesday/blob/master/Australia-fires-2020-01-07/Auz_Rain&Temp2.gif?raw=true){fig-alt="Animated gif of rainfall and temperature changes over time in Australian cities" fig-align="center" width="90%"}
 
-![Regional map UK showing how each area is doing in terms of gender pay equality for each year data has existed, from 2017-2022](https://github.com/andrewmoles2/TidyTuesday/blob/master/paygap-2022-06-28/median_pay_diff_postcode_year.png?raw=true){fig-alt="Regional map showing how each area of the UK is doing in terms of gender pay equality for each year data has existed from 2017-2023. " fig-align="center" width="75%"}
+![Regional map UK showing how each area is doing in terms of gender pay equality for each year data has existed, from 2017-2023](https://github.com/andrewmoles2/TidyTuesday/blob/master/paygap-2022-06-28/median_pay_diff_postcode_year.png?raw=true){fig-alt="Regional map showing how each area of the UK is doing in terms of gender pay equality for each year data has existed from 2017-2023. " fig-align="center" width="75%"}
 
-::: {.callout-tip collapse="true"}
+::: {.callout-tip collapse="false"}
 ## Fun side note
 
-This webpage was built using R. If you are interested, come to the pre-sessional workshops and chat to one of the instructors about it!
+This webpage was built using R. If you are interested chat to one of the instructors about it!
 :::
+
+<!--
 
 ------------------------------------------------------------------------
 
@@ -424,21 +407,6 @@ The height in this calculation should be in meters. For example, someone who is 
 
 ------------------------------------------------------------------------
 
-# Note on R and RStudio
-
-You might be asking yourself, why have I installed R ***and*** RStudio? Or why am I using RStudio and not just R?
-
-An abridged answer to this question is R is the language we will be using, and RStudio is the environment in which we will be using R.
-
-The unabridged answer is that R is a computer language, which means it cannot be opened like other computer applications such as an internet explorer (Chrome or Firefox) or Microsoft Word. Instead, to use R you write commands in the R language and ask your computer to interpret them. Previously, this would involve typing commands into a terminal application, or writing a script in a text editing software and running it through a terminal application. This is not the *easiest* way of writing R code, and is where RStudio comes in!
-
-RStudio is an application, like Google Chrome or Firefox, which means it is easy to open on your computer. RStudio is a popular tool for using R, as it provides a pleasant interface for you to use R, with helpful features like the auto-completion, file management, and an environment panel to show/explore your data.
-
-::: callout-tip
-## What is the terminal?
-
-The terminal is a program that you use to type in commands that are then executed by your computer's operating system. It is a text input/output environment.
-:::
 
 ------------------------------------------------------------------------
 
@@ -474,85 +442,7 @@ You can either use these videos to follow along, or as a tool for finding the so
 
 ------------------------------------------------------------------------
 
-# What are my next steps? {#sec-steps}
-
-If you are on the modules shown below, it is recommended you attend the in-person pre-sessional training workshops the Digital Skills Lab (DSL) will be running through September to early October.
-
-::: columns
-::: {.column width="50%"}
--   MY452/552
--   MY455/555
--   MY472
--   MY457/557
--   MY474/574
-:::
-
-::: {.column width="50%"}
--   MY461/561
--   MY459/559
--   DS105
--   DS202
-:::
-:::
-
-Students not on these modules are very welcome to join the in-person pre-sessional training, particularly if you have struggled to get R installed, found the exercises difficult, or want to get a better understanding of R.
-
-## R Pre-Sessional in-person workshops {#sec-workshops}
-
-The pre-sessional workshops are two hour long, in-person practical workshops to help you learn R. You will be working through practical exercises, designed to build your knowledge in R, while being supported by a team of data science trainers.
-
-The content for these workshops will cover the key fundamental knowledge needed for using the R programming language. The content is split into worksheets which gradually progress you through topics.
-
-Completing all the worksheets will take **around 10 hours** to complete.
-
-These topics include, but are not limited to:
-
--   Working with different data types in R such as numerical, text, categorical, data frames (spreadsheet like data structures), matrices, and lists
-
--   Learning to manipulate these data types to extract what information you need, and perform operations on them
-
--   Using conditional operations to manipulate data
-
--   Using functions, built in code, to perform a wide array of operations like finding the mean
-
--   Loading datasets into R, and handling some common issues
-
--   Automating code, using tools like a for loop
-
--   Streamline your code by writing your own functions
-
-![Flow and topics covered in the R Pre-Sessional workshops](https://github.com/andrewmoles2/graphviz-figures/blob/main/figures/programming_R_series.png?raw=true){width="55%"}
-
-These workshops will be run on a regular basis through September and early October.
-
-| Date                   | Time  | Location             |
-|------------------------|-------|----------------------|
-| Monday 15th January    | 13-15 | LSE Life Workspace 4 |
-| Tuesday 16th January   | 13-15 | LSE Life Workspace 4 |
-| Monday 22nd January    | 13-15 | LSE Life Workspace 4 |
-| Wednesday 24th January | 13-15 | LSE Life Workspace 4 |
-| Monday 29th January    | 13-15 | LSE Life Workspace 4 |
-| Tuesday 30th January   | 13-15 | LSE Life Workspace 4 |
-
-: Dates, times, and location of R pre-sessional workshops
-
-## Booking in-person workshops {#sec-booking}
-
-**Attendance to the workshops is through booking only**. To book onto the workshops, you will need to [follow this booking link](https://apps.lse.ac.uk/training-system/userBooking/course/9999199)
-
-::: callout-important
-These workshops will be popular and there will be a maximum capacity. If you can no longer attend, please cancel your booking on the *Training and Development System* so another student can book.
-:::
-
-## What other support is available? {#sec-support}
-
-Outside the pre-sessional workshops, the Digital Skills Lab will be running R workshops from October-December, then January-March, and again May-July.
-
-There will also be drop-in advice and 1-2-1 services available throughout the year.
-
-You can find out more information on the courses and support the Digital Skills Lab offers via [our webpage](https://info.lse.ac.uk/current-students/digital-skills-lab).
-
-For help or other general queries please contact `digital.skills.lab@lse.ac.uk`.
+-->
 
 ------------------------------------------------------------------------
 
@@ -565,9 +455,9 @@ For help or other general queries please contact `digital.skills.lab@lse.ac.uk`.
 -   You will work with fellow learners, utilising your prior experience and web searches to find solutions, with a R expert on hand if you get stuck
 -   Workshop sessions are hands on and practical
 
-To prepare for the in-person workshops you need to get the materials. Below is information and steps on how to do this.
+![Flow diagram showing the full R series of workshops and a recommended route](https://github.com/andrewmoles2/graphviz-figures/blob/main/figures/full_R_series.png?raw=true){width="80%"}
 
-## Download the R Markdown files
+## Download the R Markdown and data files
 
 The files for the workshops can be downloaded from the button below:
 
@@ -588,12 +478,21 @@ Double click on the file and the uncompressed contents will appear next to your 
 
 An R Markdown file has sections of text and code together in a single document. This is helpful for tutorials, documentation, and writing reports.
 
-An in-depth description can be found in the [R for Data Science](https://r4ds.had.co.nz/r-markdown.html) open source book
+An in-depth description can be found in the [R for Data Science](https://r4ds.had.co.nz/r-markdown.html){target="_blank"} open source book
 :::
+
+# Getting started with RStudio and the R Markdown files
+
+Below is a short video on how to get started with the materials. If you prefer text or image based guides you can use the sections below. 
+
+
+[Video showing downloading and unzipping materials, opening RStudio, opening materials, and running some code. Should I add audio too?]
+
+--------------------------------------------------------
 
 ## Opening the R Markdown files
 
-Opening a R Markdown file is very similar to opening a script in R using `File > Open File...`. R Markdown files have the extension `.Rmd`.
+Opening a R Markdown file is very similar to opening a file in other software by using the menus such as `File > Open File...`. R Markdown files have the extension `.Rmd`.
 
 ## Using a R Markdown file
 
@@ -603,27 +502,11 @@ We are using R Markdown notebooks for these workshops as we can add text around 
 
 There are three ways to run code in a code cell. The two ways mentioned in the image (Run and play button), and third is to use `ctrl/command + Enter` to run each line just like you would with an R script.
 
-The most important thing for you to take note of is the code cells. Each code cell is like a small R script. You'll notice the \`\`\` markings around the code cell. It is important these do not get deleted, so be careful when editing your code!
+The most important thing for you to take note of is the code cells. Each code cell is like a small R script. You'll notice the \`\`\` markings around the code cell. **It is important these do not get deleted, so be careful when editing your code!**
 
 Finally, you can add your own code cell using `option+command+i` on a Mac or `ctrl + alt + i` on a Windows machine.
 
 Throughout the notebooks you will come across exercises, with empty code cells for you to type your code into. Your task is to test out the examples, then try and do the exercises.
-
-::: callout-note
-If you have struggled with any of these steps, just come along to the workshops and ask a trainer for support
-:::
-
-## Getting started with the notebooks
-
-The R Markdown notebooks have a series of explanations, examples, and exercises for you to work through. You will be working through a series of exercises to build your skills using R.
-
-What to do when you get stuck:
-
-1.  **Search online**: Being able to search for relevant information online by formulating your problem as an effective search term is a highly important skill for programmers at all levels of proficiency.
-
-2.  Check with the people sitting around you. In a real job, you would seek help from your colleagues and friends, so start that now. If you don't know the person next to you, introduce yourself now.
-
-3.  Ask the **trainer** if you struggle to find a solution.
 
 The below image is a screenshot of one of the R Markdown notebooks which should guide you on how to get started using them. 
 
@@ -633,14 +516,24 @@ You can also use the visual mode in RStudio, which can make using the notebooks 
 
 ![Image of R Markdown fundamentals notebook, in visual mode, to guide on how to use the notebooks](images/using_notebooks_visual.png){width="90%" fig-align="center"}
 
+## What to do when you get stuck
+
+The R Markdown notebooks have a series of explanations, examples, and exercises for you to work through. You will be working through a series of exercises to build your skills using R. Sometimes you will get stuck. Below are a few suggestions to help you out. 
+
+1.  **Search online**: Being able to search for relevant information online by formulating your problem as an effective search term is a highly important skill for programmers at all levels of proficiency.
+
+2. Use the built in help menu in RStudio. You will find it in the bottom right panel in the help tab. It is great for working out how functions work. 
+
+3.  Check with the people sitting around you. In a real job, you would seek help from your colleagues and friends, so start that now. If you don't know the person next to you, introduce yourself now.
+
+4.  Ask the **trainer** if you struggle to find a solution.
+
 ------------------------------------------------------------------------
 
-# Final remarks
+# What other support is available? {#sec-support}
 
-This tutorial was written by the Digital Skills Lab (DSL) in support for the Methodology department and the Data Science Institute. We hope that you found it helpful in getting started with R.
+Outside the pre-sessional workshops, the Digital Skills Lab will be running R workshops from October-December, then January-March, and again May-July.
 
-```{r dsl_image, echo=FALSE}
-knitr::include_graphics("images/DigitalSkillsLab.png")
-#"E73736"
-#"#EFEEF3"
-```
+You can find out more information on the courses and support the Digital Skills Lab offers via [our webpage](https://info.lse.ac.uk/current-students/digital-skills-lab){target="_blank"}.
+
+For help or other general queries please contact `digital.skills.lab@lse.ac.uk`.
