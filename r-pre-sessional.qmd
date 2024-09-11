@@ -483,10 +483,7 @@ An in-depth description can be found in the [R for Data Science](https://r4ds.ha
 
 # Getting started with RStudio and the R Markdown files
 
-Below is a short video on how to get started with the materials. If you prefer text or image based guides you can use the sections below. 
-
-
-[Video showing downloading and unzipping materials, opening RStudio, opening materials, and running some code. Should I add audio too?]
+Below are guides on how to get started using RStudio and the R Markdown files. If you prefer a video guide see @sec-video. 
 
 --------------------------------------------------------
 
@@ -515,6 +512,10 @@ The below image is a screenshot of one of the R Markdown notebooks which should 
 You can also use the visual mode in RStudio, which can make using the notebooks easier. To do so click the tab in the top left corner of RStudio that says visual. The image below shows the visual mode.
 
 ![Image of R Markdown fundamentals notebook, in visual mode, to guide on how to use the notebooks](images/using_notebooks_visual.png){width="90%" fig-align="center"}
+
+## Video guide for getting started {#sec-video}
+
+
 
 ## What to do when you get stuck
 
