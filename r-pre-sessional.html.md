@@ -512,7 +512,7 @@ You can also use the visual mode in RStudio, which can make using the notebooks 
 
 ## Video guide for getting started {#sec-video}
 
-![Video showing setup from downloading materials from website, extracting files, opening RStudio, opening files in RStudio, and using the R Markdown files](presessional_setup_v2.mp4)
+![Video showing setup from downloading materials from website, extracting files, opening RStudio, opening files in RStudio, and using the R Markdown files](resources/presessional_setup_v2.mp4)
 
 -   Note we are using a Mac. The setup is very similar on Windows
 
