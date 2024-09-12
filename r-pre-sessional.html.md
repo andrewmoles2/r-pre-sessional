@@ -28,16 +28,17 @@ css: css/styles.css
 
 
 
+
 # Introduction to the pre-sessional for R
 
-The R pre-sessional workshops are designed to help you get started with R which you will need for some modules during your degree programme. For example, students who will take a Methodology module will likely be using R in those seminars. 
+The R pre-sessional workshops are designed to help you get started with R which you will need for some modules during your degree programme. For example, students who will take a Methodology module will likely be using R in those seminars.
 
-This webpage contains information on: 
+This webpage contains information on:
 
-*   Instructions on how to install R onto your laptop   
-*   Why would we want to learn R    
-*   The pre-sessional materials    
-*   Getting started instructions    
+-   Instructions on how to install R onto your laptop\
+-   Why would we want to learn R\
+-   The pre-sessional materials\
+-   Getting started instructions
 
 ## Information on the workshops
 
@@ -45,7 +46,7 @@ The pre-sessional workshops are two hour long, in-person practical workshops to 
 
 The content for these workshops will cover the key fundamental knowledge needed for using the R programming language. The content is split into worksheets which gradually progress you through topics.
 
-Completing all the worksheets will take **around 15 hours** to complete. Completing the fundamentals materials will take around **7 hours**. 
+Completing all the worksheets will take **around 15 hours** to complete. Completing the fundamentals materials will take around **7 hours**.
 
 These topics include, but are not limited to:
 
@@ -67,7 +68,7 @@ These topics include, but are not limited to:
 
 -   Streamline your code by writing your own functions
 
-Below is a diagramme showing how all the worksheets interact which should help you know where to start, and where you are going. 
+Below is a diagramme showing how all the worksheets interact which should help you know where to start, and where you are going.
 
 ![Flow diagram showing the full R series of workshops and a recommended route](https://github.com/andrewmoles2/graphviz-figures/blob/main/figures/full_R_series.png?raw=true){width="80%"}
 
@@ -137,7 +138,7 @@ To run R on a Mac operating system, XQuartz is required. You can install it by f
 
 ## Installing R and RStudio installation issues
 
-If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you will have to install an older version of the software. Speak with a trainer if you had difficulties with the install. 
+If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you will have to install an older version of the software. Speak with a trainer if you had difficulties with the install.
 
 ## Note on R and RStudio
 
@@ -154,7 +155,6 @@ RStudio is an application, like Google Chrome or Firefox, which means it is easy
 
 The terminal is a program that you use to type in commands that are then executed by your computer's operating system. It is a text input/output environment.
 :::
-
 
 # Why R?
 
@@ -181,6 +181,10 @@ Some cool things you can do in R:
 This webpage was built using R. If you are interested chat to one of the instructors about it!
 :::
 
+
+
+
+````{=html}
 <!--
 
 ------------------------------------------------------------------------
@@ -275,7 +279,6 @@ In this exercise we are going to open a script, and save it.
 2)  Now the script is open, save the script as something like `r-pre-sessional.R`. There are a few ways of doing this, pressing `command/ctrl + s` is the simplest method
 3)  Lets try and run some code. In this example, you want to convert your running time in minutes to seconds. In the script, type or copy the following code:
 
-
 ::: {.cell}
 
 ```{.r .cell-code  code-fold="false"}
@@ -287,7 +290,6 @@ run_seconds <- run_minutes*60
 run_seconds
 ```
 :::
-
 
 4)  Now run the code! There are two main ways of doing this. First, we can highlight the code, and click the `Run` button near the top centre right of RStudio. Second, we can put our cursor on each line and use `command/ctrl + enter` to run the code line by line.
 5)  The result of your code will appear in the console and should look like: [1] 1580.4
@@ -319,11 +321,9 @@ In the script we made in exercise 3, try the following exercises:
 7)  Print your `my_height_ft_m` variable
 8)  Now try and do the calculations for your own height, or an estimate if you are not sure! You can just change the value of `my_height`
 
-
 ::: {.cell}
 
 :::
-
 
 Using a value of `my_height` as 195cm, we would expect to get the outputs of:
 
@@ -345,13 +345,7 @@ In the next two exercises we will be loading a pre-prepared script and doing som
 
 1)  Click on the Download R file button and save the file where you saved your other R script
 
-
-
 {{< downloadthis resources/exercises.R label='Download R file' dname=exercises icon=r-circle type=success >}}
-
-
-
-
 
 2)  Now open the file into R. You should be able to use the file menu to achieve this: `File > Open File...`
 3)  Within the file you should see some pre-written code. Run all the code
@@ -386,11 +380,9 @@ In the script we loaded in exercise 5:
 
 You can find the formula for BMI on the [British Heart Foundation website](https://extras.bhf.org.uk/patientinfo/bmi-v1.01/app/index.html)
 
-
 ::: {.cell}
 
 :::
-
 
 You should get an output of [1] 24.7205785667324
 
@@ -436,6 +428,10 @@ You can either use these videos to follow along, or as a tool for finding the so
 ------------------------------------------------------------------------
 
 -->
+````
+
+
+
 
 ------------------------------------------------------------------------
 
@@ -456,7 +452,9 @@ The files for the workshops can be downloaded from the button below:
 
 
 
+
 {{< downloadthis resources/r-markdown-notebooks/R_pre_sessional_files.zip label='Download R pre-sessional files' dname=r-markdown-files icon=r-circle type=success >}}
+
 
 
 
@@ -482,9 +480,9 @@ An in-depth description can be found in the [R for Data Science](https://r4ds.ha
 
 # Getting started with RStudio and the R Markdown files
 
-Below are guides on how to get started using RStudio and the R Markdown files. If you prefer a video guide see @sec-video. 
+Below are guides on how to get started using RStudio and the R Markdown files. If you prefer a video guide see @sec-video.
 
---------------------------------------------------------
+------------------------------------------------------------------------
 
 ## Opening the R Markdown files
 
@@ -504,7 +502,7 @@ Finally, you can add your own code cell using `option+command+i` on a Mac or `ct
 
 Throughout the notebooks you will come across exercises, with empty code cells for you to type your code into. Your task is to test out the examples, then try and do the exercises.
 
-The below image is a screenshot of one of the R Markdown notebooks which should guide you on how to get started using them. 
+The below image is a screenshot of one of the R Markdown notebooks which should guide you on how to get started using them.
 
 ![Image of R Markdown fundamentals notebook to guide on how to use the notebooks](images/using_notebooks.png){width="90%" fig-align="center"}
 
@@ -514,15 +512,23 @@ You can also use the visual mode in RStudio, which can make using the notebooks 
 
 ## Video guide for getting started {#sec-video}
 
+![Video showing setup from downloading materials from website, extracting files, opening RStudio, opening files in RStudio, and using the R Markdown files](presessional_setup_v2.mp4)
+
+-   Note we are using a Mac. The setup is very similar on Windows
+
+-   To view in best quality use the full screen mode by clicking on the square in the bottom right corner
+
+-   To run code we used command + enter (control + enter on Windows)
+
 
 
 ## What to do when you get stuck
 
-The R Markdown notebooks have a series of explanations, examples, and exercises for you to work through. You will be working through a series of exercises to build your skills using R. Sometimes you will get stuck. Below are a few suggestions to help you out. 
+The R Markdown notebooks have a series of explanations, examples, and exercises for you to work through. You will be working through a series of exercises to build your skills using R. Sometimes you will get stuck. Below are a few suggestions to help you out.
 
 1.  **Search online**: Being able to search for relevant information online by formulating your problem as an effective search term is a highly important skill for programmers at all levels of proficiency.
 
-2. Use the built in help menu in RStudio. You will find it in the bottom right panel in the help tab. It is great for working out how functions work. 
+2.  Use the built in help menu in RStudio. You will find it in the bottom right panel in the help tab. It is great for working out how functions work.
 
 3.  Check with the people sitting around you. In a real job, you would seek help from your colleagues and friends, so start that now. If you don't know the person next to you, introduce yourself now.
 
