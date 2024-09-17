@@ -17,7 +17,7 @@ output:
 
 # Objective of workshop
 
-To start using functional programming techniques, with the apply and map family of functions, to perform iteration. 
+To start using functional programming techniques, with the apply and map family of functions, to perform iteration.
 
 # What this workshop will cover
 
@@ -31,13 +31,13 @@ In this workshop, the aim is to cover how to start working with apply and map fu
 
 # Why do we need apply functions? And what are they?
 
-For loops can be complicated and difficult to write. Luckily, you don't always have to write them in R thanks to its functional nature. Someone else has written these loops and put them into a function! This is known as *functional programming*. 
+For loops can be complicated and difficult to write. Luckily, you don't always have to write them in R thanks to its functional nature. Someone else has written these loops and put them into a function! This is known as *functional programming*.
 
 > Of course, someone has to write loops. It doesn't have to be you. --- Jenny Bryan
 
 Jenny Bryan is a software developer as RStudio: <https://jennybryan.org/>
 
-There are two main options when it comes to using *functional loops* in R, the apply family of functions, and the map family of functions. This workshop will go through both! 
+There are two main options when it comes to using *functional loops* in R, the apply family of functions, and the map family of functions. This workshop will go through both!
 
 # Introduction to the apply family of functions
 
@@ -80,7 +80,7 @@ head(penguins)
 
 Working across rows is often called working *rowwise*. By working *rowwise* we can perform a calculation or a function across several columns for each row.
 
-For example, in the penguins data we might want to find the average of the three columns bill_length_mm, bill_depth_mm and flipper_length_mm for each row of data we have. 
+For example, in the penguins data we might want to find the average of the three columns bill_length_mm, bill_depth_mm and flipper_length_mm for each row of data we have.
 
 Notice what happens when you run the below chunk. Take a moment to work through each component of the syntax to understand the iterative process.
 
@@ -387,7 +387,7 @@ head(url_load$Scooby_Doo)
 
 ## Lapply loading data exercise
 
-Using the examples above, load in the three datasets from urls listed below using `lapply()`. 
+Using the examples above, load in the three datasets from urls listed below using `lapply()`.
 
 Once loaded change the names of the data frames to *player_dob*, *grand_slams*, *grand_slam_timeline*. Use `View()` to review your data once they are loaded and check the names are changed.
 
@@ -585,7 +585,7 @@ These are two useful guides/tutorials on the purrr library, where the map family
 
 We would be grateful if you could take a minute before the end of the workshop so we can get your feedback!
 
-<https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Intermediate%2:%Functional%programming&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EouhwWBxe6lApboHwWHQBMAB53jnX0xFdIlOZ7kb4ovC3A?e=sbvEZ3>
+[https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Intermediate 2: Functional programming&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EouhwWBxe6lApboHwWHQBMAB53jnX0xFdIlOZ7kb4ovC3A?e=sbvEZ3](https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Intermediate 2: Functional programming&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EouhwWBxe6lApboHwWHQBMAB53jnX0xFdIlOZ7kb4ovC3A?e=sbvEZ3)
 
 The solutions we be available from a link at the end of the survey.
 
@@ -630,7 +630,7 @@ Now we have our data we can extract columns of interest and review our data. As 
     -   First define `par(mfrow = c(2,2))` so we can view them all plots once.
     -   Now use `map()` or `lapply()` to plot your variables
 
-*Hint 1:* plot will take a filtered dataset. If we gave the `plot()` function this code: `top_broadway_filt[, c(2, 1)]` what would it plot? 
+*Hint 1:* plot will take a filtered dataset. If we gave the `plot()` function this code: `top_broadway_filt[, c(2, 1)]` what would it plot?
 
 *Hint 2:* think of your code like a for loop, you want your map/apply function to loop through different indices for our plotting code. E.g. `map(seq(2, 4, by = 1), function)`
 

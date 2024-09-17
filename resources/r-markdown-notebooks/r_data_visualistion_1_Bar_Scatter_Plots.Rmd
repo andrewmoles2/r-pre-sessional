@@ -16,7 +16,7 @@ output:
 
 # Objective of workshop
 
-To create scatter and bar plot visualisations using the ggplot2 package. 
+To create scatter and bar plot visualisations using the ggplot2 package.
 
 # What this workshop will cover
 
@@ -25,7 +25,7 @@ In this workshop, the aim is to cover how to use the ggplot2 package. We will be
 -   An introduction to the ggplot2 package
 -   How to make scatter plots with ggplot2
 -   How to make bar plots with ggplot2
--   How to change colours and other features in your visualisations  
+-   How to change colours and other features in your visualisations
 
 ------------------------------------------------------------------------
 
@@ -38,6 +38,7 @@ There are a lot of different options for data visualistion with R. You can use t
 ![](https://github.com/andrewmoles2/rTrainIntroduction/blob/main/r-data-visualisation-1/images/ggplot2_exploratory.png?raw=true){width="437"}
 
 In this data visualisation series we will be mainly focussing on ggplot, as well as plotly. While the visualistion tools that come with R are useful, ggplot and plotly are generally easier to use and make great visualisations with. For this tutorial we will be using the below packages: ggplot2, dplyr, readr, janitor. Run the code below to install the packages if you don't have them installed already.
+
 ```{r eval=FALSE}
 # install packages
 install <- c("ggplot2", "dplyr", "readr",
@@ -48,6 +49,7 @@ install.packages(install, Ncpus = 6)
 ```
 
 Then we need to load them into our session. Run the code chunk below to load all the libraries you will need.
+
 ```{r message=FALSE}
 # load packages
 library(ggplot2)
@@ -65,6 +67,7 @@ ggplot2 is a package for producing graphics that works by combining independent 
 It is also important to note that ggplot can only use data frames. If your data is in another format you will need to transform it into a data frame in order to use ggplot.
 
 In order to understand how the layers work we will first load in some data for our examples. We will use data from the Pokémon games, which was web scraped from <https://pokemondb.net/pokedex/all>.
+
 ```{r message=FALSE}
 # load and clean names
 pokemon <- read_csv("https://raw.githubusercontent.com/andrewmoles2/webScraping/main/R/data/pokemon.csv") %>%
@@ -232,7 +235,7 @@ ggsave("hp_vs_speed.PNG", hp_vs_speed,
 
 For the exercises in this workshop we will use data from the Olympics that includes all Olympic games from 1896 through to 2016. More information on the dataset can be found here <https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-07-27/readme.md>. Run the code provided to load the libraries and data into R.
 
-We will make two scatter plots from the Olympics data. For both plots we will use dplyr to filter the information we are interested in, which has been done for you in this exercise. 
+We will make two scatter plots from the Olympics data. For both plots we will use dplyr to filter the information we are interested in, which has been done for you in this exercise.
 
 1)  Using the provided `scatter_plot1` data, make a scatter plot of Olympic gymnasts heights (x axis) and weights (y axis).
 
@@ -240,12 +243,11 @@ We will make two scatter plots from the Olympics data. For both plots we will us
 -   Change the colour palette by making a manual one or using RColorBrewer.
 -   Be sure to give your plot a title, and save your plot.
 
-2)  Using the provided `scatter_plot2` data, make a scatter plot of the age (y axis) of gymnastic medal winners by year (x axis). 
+2)  Using the provided `scatter_plot2` data, make a scatter plot of the age (y axis) of gymnastic medal winners by year (x axis).
 
 -   Colour your plot by medal by making a manual colour palette. *hint: the hex codes for gold, silver and bronze are: "#FFD700", "#C0C0C0", "#CD7F32"*
 -   Use shape to tell us what sex the gymnasts were.
 -   Be sure to give your plot a title, and save your plot.
-
 
 ```{r}
 # make sure libraries are loaded
@@ -684,7 +686,8 @@ ggplot(pokemon, aes(x = generation, y = total)) +
                shape = 95, size = 20)
 ```
 
-If we use the summary table option we first make a summary table with `group_by()` and `summarise()`. Then we add two `geom_point()` functions. The first has the pokemon data and our x and y axis. The second is our summary table, with the same x axis and the `avg_total` as the y axis. 
+If we use the summary table option we first make a summary table with `group_by()` and `summarise()`. Then we add two `geom_point()` functions. The first has the pokemon data and our x and y axis. The second is our summary table, with the same x axis and the `avg_total` as the y axis.
+
 ```{r}
 # summary table option
 gen_avg_total <- pokemon %>%
@@ -703,11 +706,12 @@ ggplot() +
 
 ```
 
-Either option works well, but for the rest of the examples we will use the `stat_summary()` option as it is less code. 
+Either option works well, but for the rest of the examples we will use the `stat_summary()` option as it is less code.
 
 Now we have all our data so we can see the number of points for each group, and we can see the average per group!
 
 Finally, we can add colour by our grouped variable (legendary) and change the colour palette. Just like with the bar plots we can adjust the positioning from stack to dodge. The examples below show both stack and dodge versions.
+
 ```{r}
 # position stacked
 ggplot(pokemon, aes(x = generation, y = total, colour = legendary)) +
@@ -740,7 +744,7 @@ Recreate your last visualisation, average age (mean or median) of GBR (Great Bri
 
 We would be grateful if you could take a minute before the end of the workshop so we can get your feedback!
 
-<https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Data%Visualisation%1:%Data%viz%with%ggplot2&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/ErkI8HmyRaxDpUKMZ_U-m4oBkuLx2XcBQx4jhWLEOFHg-w?e=SOigeU>
+[https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Data Visualisation 1: Data viz with ggplot2&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/ErkI8HmyRaxDpUKMZ_U-m4oBkuLx2XcBQx4jhWLEOFHg-w?e=SOigeU](https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Data Visualisation 1: Data viz with ggplot2&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/ErkI8HmyRaxDpUKMZ_U-m4oBkuLx2XcBQx4jhWLEOFHg-w?e=SOigeU)
 
 The solutions we be available from a link at the end of the survey.
 
@@ -779,9 +783,10 @@ The the link below to see what others have done and posted about using the Olymp
 
 # Fun extra
 
-As a fun extra you can manually determine shapes in your visualisation using `scale_shape_manual()`. We've also removed the guide which was unnecessary by using `guide = "none"`. 
+As a fun extra you can manually determine shapes in your visualisation using `scale_shape_manual()`. We've also removed the guide which was unnecessary by using `guide = "none"`.
 
-In the example below, as our x axis is generation from 1 to 8, we can make generation 1 have a shape of the number 1 and so on. 
+In the example below, as our x axis is generation from 1 to 8, we can make generation 1 have a shape of the number 1 and so on.
+
 ```{r}
 ggplot(pokemon, aes(x = generation, y = total, shape = generation)) +
   geom_point(size = 5, alpha = .33) +
@@ -790,5 +795,3 @@ ggplot(pokemon, aes(x = generation, y = total, shape = generation)) +
   scale_shape_manual(values = c(49:56),
                      guide = "none")
 ```
-
- 

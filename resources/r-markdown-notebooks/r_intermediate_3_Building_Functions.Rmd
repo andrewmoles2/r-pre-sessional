@@ -347,7 +347,7 @@ The objective is to create a new column called "generation" that contains the ge
 -   WW II: Born between 1922 and 1927
 -   If the information is wrongly coded or any year not in this categories, the function should return "Unknown"
 
-To do this you will first have to make a function, then use an apply function, such as `sapply()`, to *apply* your function to each row in `family`, assigning the result as a new column in your `family` data frame. 
+To do this you will first have to make a function, then use an apply function, such as `sapply()`, to *apply* your function to each row in `family`, assigning the result as a new column in your `family` data frame.
 
 *Hint:* our year vector has NA values. To ensure our if statement works we need to include `is.na()` with a statement like `birth_year >= 1900 & !is.na(birth_year)`. This checks for and ignores missing values in the statement.
 
@@ -376,7 +376,7 @@ As you can see functions can be really useful to make and use for your own use c
 
 We would be grateful if you could take a minute before the end of the workshop so we can get your feedback!
 
-<https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Intermediate%3:%Making%functions&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EspgYj7sxEJOlVQjxrPbE8kBRxeicoivL5aRpzF7zMet8g?e=7FkAHg>
+[https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Intermediate 3: Making functions&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EspgYj7sxEJOlVQjxrPbE8kBRxeicoivL5aRpzF7zMet8g?e=7FkAHg](https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Intermediate 3: Making functions&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EspgYj7sxEJOlVQjxrPbE8kBRxeicoivL5aRpzF7zMet8g?e=7FkAHg)
 
 The solutions we be available from a link at the end of the survey.
 

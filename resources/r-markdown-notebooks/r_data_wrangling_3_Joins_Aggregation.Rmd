@@ -16,7 +16,7 @@ output:
 
 # Objective of workshop
 
-To join together two related datasets, and perform cross tabulation and aggregation using dplyr. 
+To join together two related datasets, and perform cross tabulation and aggregation using dplyr.
 
 # What this workshop will cover
 
@@ -31,7 +31,7 @@ In this workshop, the aim is to cover how to perform relational joins, perform c
 
 # Introduction to joining data
 
-In previous workshops we have introduced how to combine data frames together that have matching columns using the `rbind` and `cbind` functions. 
+In previous workshops we have introduced how to combine data frames together that have matching columns using the `rbind` and `cbind` functions.
 
 Here we will introduce relational (or mutating) joins. This means the data frames are related by common columns, such as a id column, but the rest of the data held is different. These are known as relational data, in that multiple tables of data are related to each other, rather than being stand alone datasets.
 
@@ -57,9 +57,10 @@ Food_Info <- data.frame(
 Food_Info
 ```
 
-The id columns in our datasets above are a unique identifier (also known as a primary key). This means they identify one observation in their own table. You can test this by either using the `duplicated()` function or use the `filter()` function from dplyr or `duplicated()` with `[]` indexing. 
+The id columns in our datasets above are a unique identifier (also known as a primary key). This means they identify one observation in their own table. You can test this by either using the `duplicated()` function or use the `filter()` function from dplyr or `duplicated()` with `[]` indexing.
 
-You should get blank data frames as the output. This is good news and means we have no duplicated data. 
+You should get blank data frames as the output. This is good news and means we have no duplicated data.
+
 ```{r}
 # load dplyr
 library(dplyr)
@@ -81,12 +82,10 @@ Dplyr has several functions for joining data, which are based on SQL syntax:
 
 It can be easier to understand what each join does but seeing it visually. The four images below provide visual representation of what happens from each type of join.**To view images, either switch to visual markdown editor, or knit document to html**. See this short blog post on how to use the visual editor - <https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/>
 
-![](https://github.com/andrewmoles2/rTrainIntroduction/blob/main/r-data-wrangling-3/images/inner_join.png?raw=true){width="700"}
-![](https://github.com/andrewmoles2/rTrainIntroduction/blob/main/r-data-wrangling-3/images/left_join.png?raw=true){width="700"}
-![](https://github.com/andrewmoles2/rTrainIntroduction/blob/main/r-data-wrangling-3/images/right_join.png?raw=true){width="700"}
-![](https://github.com/andrewmoles2/rTrainIntroduction/blob/main/r-data-wrangling-3/images/full_join.png?raw=true){width="700"}
+![](https://github.com/andrewmoles2/rTrainIntroduction/blob/main/r-data-wrangling-3/images/inner_join.png?raw=true){width="700"} ![](https://github.com/andrewmoles2/rTrainIntroduction/blob/main/r-data-wrangling-3/images/left_join.png?raw=true){width="700"} ![](https://github.com/andrewmoles2/rTrainIntroduction/blob/main/r-data-wrangling-3/images/right_join.png?raw=true){width="700"} ![](https://github.com/andrewmoles2/rTrainIntroduction/blob/main/r-data-wrangling-3/images/full_join.png?raw=true){width="700"}
 
-The code below is an example of the syntax to join data frames in dplyr. The syntax is the same for the other joins (left, right, and full). `x` is the table on the right. `y` is the table on the left. `by` indicates which column we are joining our datasets with, and `join_by()` is a helper function to describe how to join the tables; more on this later. In this case both have ID so we join using that column. 
+The code below is an example of the syntax to join data frames in dplyr. The syntax is the same for the other joins (left, right, and full). `x` is the table on the right. `y` is the table on the left. `by` indicates which column we are joining our datasets with, and `join_by()` is a helper function to describe how to join the tables; more on this later. In this case both have ID so we join using that column.
+
 ```{r}
 # example with an inner join
 people_inner_join <- inner_join(x = Person_Info, y = Food_Info, by = join_by(ID))
@@ -95,13 +94,14 @@ people_inner_join
 
 From the output we can see that the inner join has included only data that is in both Person_Info and Food_Info, anything that didn't match was dropped.
 
-Deciding what join to choose depends on the situation and what you want or expect the output to be. Do you want to bring together two datasets and keep everything? Then a full join would suit that best. Do you want to join two datasets and make sure everything in one of the datasets stays? Then use left or right, depending on which dataset you want the information to stay from. 
+Deciding what join to choose depends on the situation and what you want or expect the output to be. Do you want to bring together two datasets and keep everything? Then a full join would suit that best. Do you want to join two datasets and make sure everything in one of the datasets stays? Then use left or right, depending on which dataset you want the information to stay from.
 
 ## Joining data exercise
 
-Now it is your turn to try out some joins! First we will use some data about Star Trek. We have crew, which is information about different crew members. We also have which tv series each crew member was part of. 
+Now it is your turn to try out some joins! First we will use some data about Star Trek. We have crew, which is information about different crew members. We also have which tv series each crew member was part of.
 
-Make sure you run this code before attempting the exercise below. 
+Make sure you run this code before attempting the exercise below.
+
 ```{r}
 # crew information
 crew <- data.frame(
@@ -128,25 +128,25 @@ tv_series
 
 Using the example for guidance or the dplyr help page <https://dplyr.tidyverse.org/reference/mutate-joins.html>, attempt the following joins:
 
-1) Perform a *left join* with x as crew and y as tv_series. Assign the result to st_left and print the result
-2) Perform a *right join* with x as crew and y as tv_series. Assign the result to st_left and print the result
-3) Perform a *inner join* with x as crew and y as tv_series. Assign the result to st_left and print the result
-4) Perform a *full join* with x as crew and y as tv_series. Assign the result to st_left and print the result
-5) Review the output from each join you have run. How does the output differ from each join? What rows are kept and dropped from different joins? 
+1)  Perform a *left join* with x as crew and y as tv_series. Assign the result to st_left and print the result
+2)  Perform a *right join* with x as crew and y as tv_series. Assign the result to st_left and print the result
+3)  Perform a *inner join* with x as crew and y as tv_series. Assign the result to st_left and print the result
+4)  Perform a *full join* with x as crew and y as tv_series. Assign the result to st_left and print the result
+5)  Review the output from each join you have run. How does the output differ from each join? What rows are kept and dropped from different joins?
 
 ```{r}
 # your code here
 
 ```
 
-
 # Dealing with common join issues
 
 A common problem when joining data in R is how to perform a join when your key columns don't match. There is a trick to deal with this that comes from SQL; dplyr is based off SQL so this makes sense.
 
-This is where the `join_by()` function comes into play. In the *by* argument in the join functions we do something like `by = join_by(id_number == id)`, which in the full function call looks like `left_join(df1, df2, by = join_by(id_number == id))`. In english this means: I want to join the data tables by id_number from df1, and id from df2. 
+This is where the `join_by()` function comes into play. In the *by* argument in the join functions we do something like `by = join_by(id_number == id)`, which in the full function call looks like `left_join(df1, df2, by = join_by(id_number == id))`. In english this means: I want to join the data tables by id_number from df1, and id from df2.
 
-It is usually easier to see this as an example. We can use our previous data, with some slight modifications; notice the IDs are different. 
+It is usually easier to see this as an example. We can use our previous data, with some slight modifications; notice the IDs are different.
+
 ```{r}
 # make our example data again
 Person_Info <- data.frame(
@@ -167,6 +167,7 @@ names(Food_Info)
 ```
 
 The order of the variables in the *by* argument is important. `Person_Info` has ID_num, and that is our first table, so that has to go first in the *by* argument. `Food_Info` has ID, and that is our second table, so that has to go second in our the *by* argument.
+
 ```{r}
 # join using the col = col trick
 food_person <- left_join(Person_Info, Food_Info,
@@ -175,9 +176,9 @@ food_person <- left_join(Person_Info, Food_Info,
 food_person
 ```
 
-The result gives you the column name for the first by argument you added, which in this case was ID_num. You can also just rename your columns, but this method is more elegant. 
+The result gives you the column name for the first by argument you added, which in this case was ID_num. You can also just rename your columns, but this method is more elegant.
 
-Another common issue is having the same columns in two tables you're joining. Notice in the last output how we have Age.x and Age.y. This is because it appears in both, so the join adds extra labels. We can fix this by adding `Age` into the *by* argument. 
+Another common issue is having the same columns in two tables you're joining. Notice in the last output how we have Age.x and Age.y. This is because it appears in both, so the join adds extra labels. We can fix this by adding `Age` into the *by* argument.
 
 ```{r}
 # add age to by
@@ -187,7 +188,7 @@ food_person <- left_join(Person_Info, Food_Info,
 food_person
 ```
 
-Everything now looks good. There can be lots of little issues when joining up data, and often you will need to do a little bit of cleaning to get the data in a fit state to join up. The exercise below takes you through some of these steps! 
+Everything now looks good. There can be lots of little issues when joining up data, and often you will need to do a little bit of cleaning to get the data in a fit state to join up. The exercise below takes you through some of these steps!
 
 ## Dealing with common join issues exercise
 
@@ -217,8 +218,8 @@ To join the data we need to do some data cleaning. We have remove the text from 
 1)  We first need to fix the ids in the movies_imdb dataset. Type the following code to fix the ids: `movies_imdb$imdb_title_id <- parse_number(movies_imdb$imdb_title_id)`. The `parse_number()` function is from the readr library, and removes text from strings, which is exactly what we need in this case
 2)  Before joining the data we should test for duplicate ids in both datasets. Using the example above, check the duplicates in the imdb_id column in movies_imdb and bechdel datasets.
 3)  We have some duplicates in the bechdel data! Use `filter()`, `duplicated()` and the `!` (not) operator to remove them.
-4)  Using the `inner_join()` function, join together movies_imdb and bechdel data frames. Call the new data frame `imdb_bechdel`. You can do this using the `by` argument with the `join_by()` function. The columns to join on are the imdb id column, title, and year columns. Remember that the imdb id column is different in each dataset, and we need to tell the `join_by()` function the different names. 
-5)  Using the `full_join()` function, join together movies_imdb and bechdel data frames. Call the new data frame `imdb_bechdel_full`. You can do this using the same method used in step 4. 
+4)  Using the `inner_join()` function, join together movies_imdb and bechdel data frames. Call the new data frame `imdb_bechdel`. You can do this using the `by` argument with the `join_by()` function. The columns to join on are the imdb id column, title, and year columns. Remember that the imdb id column is different in each dataset, and we need to tell the `join_by()` function the different names.
+5)  Using the `full_join()` function, join together movies_imdb and bechdel data frames. Call the new data frame `imdb_bechdel_full`. You can do this using the same method used in step 4.
 6)  Have a look at both your newly joined up data frames using head, glimpse or View. Do you notice how when we used inner_join we filtered out all data that isn't in our bechdel test dataset?
 
 *Note: once you have run step 1, it will give an error each time you try to re-run it. This is because parse_number() only works on text, and we have converted the imdb_title_id column to numbers*
@@ -532,12 +533,11 @@ imdb_bechdel %>%
   mutate(total_reviews = sum(across(reviews_from_users:reviews_from_critics)))
 ```
 
-
 # Final task - Please give us your individual feedback!
 
 We would be grateful if you could take a minute before the end of the workshop so we can get your feedback!
 
-<https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Data%Wrangling%3:%Joining%and%aggregation&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/Ev72JK9UjRhMgv0YHNkJZHsBjGHzydNtK5aBqHgc4Otr4g?e=m8huf3>
+[https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Data Wrangling 3: Joining and aggregation &topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/Ev72JK9UjRhMgv0YHNkJZHsBjGHzydNtK5aBqHgc4Otr4g?e=m8huf3](https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Data Wrangling 3: Joining and aggregation &topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/Ev72JK9UjRhMgv0YHNkJZHsBjGHzydNtK5aBqHgc4Otr4g?e=m8huf3)
 
 The solutions we be available from a link at the end of the survey.
 
@@ -587,21 +587,21 @@ df2 %>%
 
 # Individual coding challenge 2
 
-In this coding challenge we will be bringing everything in this workshop together. We will join up two datasets, preform an aggregation, then visualise the results in a table. 
+In this coding challenge we will be bringing everything in this workshop together. We will join up two datasets, preform an aggregation, then visualise the results in a table.
 
-Data for this coding challenge comes from tidytuesday, information on the data can be found here: https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-09-14/readme.md 
+Data for this coding challenge comes from tidytuesday, information on the data can be found here: <https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-09-14/readme.md>
 
-We are aiming to compare some popular performer statistics such as weeks on the chart, and danceability of their music. 
+We are aiming to compare some popular performer statistics such as weeks on the chart, and danceability of their music.
 
-1) load in the billboard csv from this url: https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-09-14/billboard.csv
-2) load in the audio_features csv from this url: https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-09-14/audio_features.csv
-3) have a look at your data using glimpse, View or other functions. Do you see anyway of joining these two datasets?
-4) use an inner join to join the datasets by song_id, song, and performer. Save the result as `billboard_features`
-5) Review the outcome of the join to make sure it worked correctly
-6) filter your joined data (`billboard_features`) to keep only the following performers: Ed Sheeran, Adele, Taylor Swift, Ariana Grande, Bruno Mars, The Weeknd, Billie Eilish, Lady Gaga
-7) convert the `spotify_track_duration_ms` column to minutes as a new column called `duration_mins`
-8) find the averages (mean) for each performer of the following columns: duration_mins, weeks_on_chart, danceability, energy
-9) arrange your result in descending order based on the average weeks on the chart
+1)  load in the billboard csv from this url: <https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-09-14/billboard.csv>
+2)  load in the audio_features csv from this url: <https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-09-14/audio_features.csv>
+3)  have a look at your data using glimpse, View or other functions. Do you see anyway of joining these two datasets?
+4)  use an inner join to join the datasets by song_id, song, and performer. Save the result as `billboard_features`
+5)  Review the outcome of the join to make sure it worked correctly
+6)  filter your joined data (`billboard_features`) to keep only the following performers: Ed Sheeran, Adele, Taylor Swift, Ariana Grande, Bruno Mars, The Weeknd, Billie Eilish, Lady Gaga
+7)  convert the `spotify_track_duration_ms` column to minutes as a new column called `duration_mins`
+8)  find the averages (mean) for each performer of the following columns: duration_mins, weeks_on_chart, danceability, energy
+9)  arrange your result in descending order based on the average weeks on the chart
 10) save result as `billboard_agg`
 
 ```{r}
@@ -624,13 +624,16 @@ library(dplyr)
 
 ```
 
-If you've managed to do the above challenge this code should produce a nice table for you. If you want to learn how to play around and edit this table, the documentation for gt can be found here: https://gt.rstudio.com/. 
+If you've managed to do the above challenge this code should produce a nice table for you. If you want to learn how to play around and edit this table, the documentation for gt can be found here: <https://gt.rstudio.com/>.
 
-First we make sure gt is installed. 
+First we make sure gt is installed.
+
 ```{r eval=FALSE}
 install.packages("gt")
 ```
-Then we can run the below code. 
+
+Then we can run the below code.
+
 ```{r, error=TRUE}
 # make into a nice visual table
 library(gt)
@@ -643,7 +646,6 @@ billboard_agg %>%
                                    rows = avg_duration_mins > 4)) %>%
   cols_align(align = "center")
 ```
-
 
 ------------------------------------------------------------------------
 
@@ -691,4 +693,4 @@ df2[num1 >= 5, .(avg_num2 = median(num2, na.rm = TRUE),
                  avg_num3 = median(num3, na.rm = TRUE)), by = c("key", "key2")]
 ```
 
-If you are interested in learning more have a look the introduction to data table vignette: <https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html>. It is a great package with all the same functionality of the tidyverse (aggregation, joins, data manipulation etc.). It is especially useful when you have large datasets, due to its speed at running and performing operations. 
+If you are interested in learning more have a look the introduction to data table vignette: <https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html>. It is a great package with all the same functionality of the tidyverse (aggregation, joins, data manipulation etc.). It is especially useful when you have large datasets, due to its speed at running and performing operations.

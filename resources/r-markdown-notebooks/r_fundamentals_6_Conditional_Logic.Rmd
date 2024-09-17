@@ -291,9 +291,10 @@ Will be using the Pokemon dataset again for this exercise.
 
 # The If statement
 
-The if statement is fundamental to programming. It uses conditional operators and boolean to *control flow*. This means running a test to determine which operation or output is given, controlling the flow of your code. They work as follows: If statement is true, do this, else do something else. 
+The if statement is fundamental to programming. It uses conditional operators and boolean to *control flow*. This means running a test to determine which operation or output is given, controlling the flow of your code. They work as follows: If statement is true, do this, else do something else.
 
-If you doing a test on a variable, you can use the if statement like shown below. Run the code to test it out, and change the variables to see what happens. 
+If you doing a test on a variable, you can use the if statement like shown below. Run the code to test it out, and change the variables to see what happens.
+
 ```{r}
 # pizza variables
 pizza_price <- 10
@@ -309,9 +310,10 @@ if (bank_balance > pizza_price) {
 }
 ```
 
-If you have a vector with multiple elements you can use the built in `ifelse()` function. 
+If you have a vector with multiple elements you can use the built in `ifelse()` function.
 
-The make up of this function is: `ifelse(condition, outcome if true, outcome if false)`. This function will compare each element for you. `ifelse()` and is generally easier to use than the if statement, and has the same functionally. 
+The make up of this function is: `ifelse(condition, outcome if true, outcome if false)`. This function will compare each element for you. `ifelse()` and is generally easier to use than the if statement, and has the same functionally.
+
 ```{r}
 # pizza variables
 pizza_price <- c(7, 11, 9, 10.5, 10)
@@ -321,9 +323,10 @@ bank_balance <- 10
 ifelse(bank_balance >= pizza_price, "Yes I can afford pizza!", "No pizza for you")
 ```
 
-We can nest if statements together if we have several different conditions (or else ifs). 
+We can nest if statements together if we have several different conditions (or else ifs).
 
-This is the same example as above but we have added an extra condition. 
+This is the same example as above but we have added an extra condition.
+
 ```{r}
 # pizza variables
 pizza_price <- c(7, 11, 9, 10.5, 10)
@@ -336,7 +339,7 @@ ifelse(bank_balance > pizza_price, "Yes I can afford pizza!",
 
 ```
 
-When nesting if statements like this, *else* becomes the next ifelse statement. 
+When nesting if statements like this, *else* becomes the next ifelse statement.
 
 ## ifelse exercise
 
@@ -355,7 +358,7 @@ When nesting if statements like this, *else* becomes the next ifelse statement.
 
 We would be grateful if you could take a minute before the end of the workshop so we can get your feedback!
 
-<https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Fundamentals%6:%Conditionals%and%Logic&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EsE8R-SkQKVHgGxQR78_Dp8B5dgJGBH0SntwdsbDv8AZaA?e=0ZYnrr>
+[https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Fundamentals 6: Conditionals and Logic &topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EsE8R-SkQKVHgGxQR78_Dp8B5dgJGBH0SntwdsbDv8AZaA?e=0ZYnrr](https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Fundamentals 6: Conditionals and Logic &topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EsE8R-SkQKVHgGxQR78_Dp8B5dgJGBH0SntwdsbDv8AZaA?e=0ZYnrr)
 
 # Individual take home challenge
 
@@ -365,7 +368,7 @@ In this coding challenge we are going to keep looking at the pokemon data. In th
 2)  Next we need to make a dataset called ash, and subset out all his pokemon using %in% as shown above
 3)  Now using `mean()` compare the mean Total for Ash's pokemon and the rest in the pokemon data *hint: putting both mean functions in a c() function will allow you to see them side by side*
 4)  Looks like Ash's pokemon on average are worse, but by how much? Work out the difference between the total of Ash's pokemon and the other pokemon.
-5)  Which of Ash's pokemon have higher total stats than the average pokemon? Use `table()` to do this comparison. *hint: table(data$name, data$total >= mean(data$total))*
+5)  Which of Ash's pokemon have higher total stats than the average pokemon? Use `table()` to do this comparison. *hint: table(data*$name, data$total \>= mean(data\$total))
 6)  Having stats over or equal to 100 seems important. Using subsetting and OR statements, find out how many of Ash's pokemon have stats in HP,Attack,Defense,Sp..Atk,Sp..Def, and Speed over or equal to 100.
 
 ```{r}

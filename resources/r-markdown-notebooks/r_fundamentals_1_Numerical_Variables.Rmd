@@ -46,7 +46,7 @@ Use R to work out the following arithmetic:
 
 1)  44 multiplied by 26
 2)  Divide 9.6 by 1.6
-3)  12 minus 4 to the power of 3. *Hint: use brackets (x-y)^z*
+3)  12 minus 4 to the power of 3. *Hint: use brackets (x-y)\^z*
 4)  4 multiplied by 9 divided by the sum of 5 and 6
 5)  Divide 22 by 36 and multiply the result by 100
 6)  The remainder of 55 divided by 2. *hint: look up r's modulus operator*
@@ -111,10 +111,9 @@ You will have noticed the hashtags (`#`) with text in the above example. These a
 
 ```
 
-
 # Reassigning variables
 
-You can also change the value of a variable you have already assigned. 
+You can also change the value of a variable you have already assigned.
 
 Code works sequentially in R and the order you run commands matters. See the example below on what happens if we repeat adding numbers to a total.
 
@@ -133,7 +132,7 @@ total
 
 ## Reassigning variables exercise
 
-In this exercise we are going to sum our new pay check with our previous bank balance to keep up to date with our finances. We will then add some other pay checks and costs to update our bank balance. 
+In this exercise we are going to sum our new pay check with our previous bank balance to keep up to date with our finances. We will then add some other pay checks and costs to update our bank balance.
 
 1)  Make a variable called pay_check_2 with a value of 50
 2)  Assign bank_balance, and calculate bank_balance + pay_check_2
@@ -196,12 +195,11 @@ overall_grade <- (course1 + course2)/3
 overall_grade
 ```
 
-
 # Final task - Please give us your individual feedback!
 
 We would be grateful if you could take a minute before the end of the workshop so we can get your feedback!
 
-<https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Fundamentals%1:%Numerical%Variables&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/Emxx38xoB5FPvabJPeYBPrsBG7sNbQ5NANkCTRnPVPKtbg?e=MCYCbp>
+[https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Fundamentals 1: Numerical Variables &topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/Emxx38xoB5FPvabJPeYBPrsBG7sNbQ5NANkCTRnPVPKtbg?e=MCYCbp](https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R%20Fundamentals%201:%20Numerical%20Variables%20&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/Emxx38xoB5FPvabJPeYBPrsBG7sNbQ5NANkCTRnPVPKtbg?e=MCYCbp)
 
 # Individual coding challenge
 

@@ -460,7 +460,7 @@ For this exercise, we will expand our analysis to cover a few more classics. Nam
 
 4.  Review the output. Do you see any trends?
 
-*Hint 1:* To make a scatter plot we use the `plot()` function with something like `plot(x ~ y, data = z)` 
+*Hint 1:* To make a scatter plot we use the `plot()` function with something like `plot(x ~ y, data = z)`
 
 *Hint 2:* You will need to subset your data within the for loop
 
@@ -472,11 +472,12 @@ For this exercise, we will expand our analysis to cover a few more classics. Nam
 
 # While loops
 
-This workshop has focused on the for loop as a tool to repeat code. Another option is the while loop, which repeats the specified code until a condition is met. They are particularly useful when you have some user input needed, and you do not know how many times you will need to repeat the code. Generally speaking, while loops are rare in R but can be useful to know, especially if you are planning to use other programming languages in the future. 
+This workshop has focused on the for loop as a tool to repeat code. Another option is the while loop, which repeats the specified code until a condition is met. They are particularly useful when you have some user input needed, and you do not know how many times you will need to repeat the code. Generally speaking, while loops are rare in R but can be useful to know, especially if you are planning to use other programming languages in the future.
 
-Here is an example of a while loop in action. The setup and execution is slightly different to a for loop. On each loop, it will check if the condition is true, then run the code in the `{}`. On each loop we need to update our variable, or the loop would just stop at 1. 
+Here is an example of a while loop in action. The setup and execution is slightly different to a for loop. On each loop, it will check if the condition is true, then run the code in the `{}`. On each loop we need to update our variable, or the loop would just stop at 1.
 
-Why did our while loop print 1 to 5? 
+Why did our while loop print 1 to 5?
+
 ```{r}
 # variable
 x <- 1
@@ -489,11 +490,12 @@ while (x < 6) {
 }
 ```
 
-One word of caution on using while loops, if the condition is never met, the while loop will run forever! 
+One word of caution on using while loops, if the condition is never met, the while loop will run forever!
 
-Another example of a while loop in action, is a dice rolling programme. Run the code and review the output. 
+Another example of a while loop in action, is a dice rolling programme. Run the code and review the output.
 
 Why did the code stop when it did? What was the output when the code stopped?
+
 ```{r}
 dice_roll <- 0
 
@@ -503,12 +505,11 @@ while(dice_roll != 6) {
 }
 ```
 
-
 ## While loop exercise
 
-For this exercise, we will be debugging some code to get it running! This code is for randomly generating data, and uses a while loop to do that. 
+For this exercise, we will be debugging some code to get it running! This code is for randomly generating data, and uses a while loop to do that.
 
-There are 4 errors to find in total. If you get the code to run, you should get a box plot as the output! 
+There are 4 errors to find in total. If you get the code to run, you should get a box plot as the output!
 
 ```{r, error=TRUE}
 # data
@@ -538,7 +539,6 @@ plot(x = word_data$all_words,
      y = word_data$n)
 ```
 
-
 # Some useful resources
 
 <https://www.datacamp.com/tutorial/tutorial-on-loops-in-r>
@@ -553,7 +553,7 @@ plot(x = word_data$all_words,
 
 We would be grateful if you could take a minute before the end of the workshop so we can get your feedback!
 
-<https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Intermediate%1:%Introduction%to%for%loops&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/Es1aaTE7_g9ClbjG_R0A87IBJanmSZ-vDdM2gJfEcWahhg?e=gtECWp>
+[https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Intermediate 1: Introduction to for loops&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/Es1aaTE7_g9ClbjG_R0A87IBJanmSZ-vDdM2gJfEcWahhg?e=gtECWp](https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Intermediate 1: Introduction to for loops&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/Es1aaTE7_g9ClbjG_R0A87IBJanmSZ-vDdM2gJfEcWahhg?e=gtECWp)
 
 The solutions we be available from a link at the end of the survey.
 
@@ -601,13 +601,13 @@ We have an Excel file, called `top_shows.xlsx`, which has our data stored in mul
 
 ```
 
-Note, we have only have 4 datasets here so we can do this manually. However, if this was to be expanded this would quickly become tiresome! 
+Note, we have only have 4 datasets here so we can do this manually. However, if this was to be expanded this would quickly become tiresome!
 
 Something else to note is there are three really nice alternatives to appending data frames from a list: `do.call()`, `bind_rows()` from dplyr, and `rbindlist()` from data.table.
 
-- `do.call(rbind, broadway)`
-- `dplyr::bind_rows(broadway)`
-- `data.table::rbindlist(broadway)`
+-   `do.call(rbind, broadway)`
+-   `dplyr::bind_rows(broadway)`
+-   `data.table::rbindlist(broadway)`
 
 Try and do part 7 from the above exercises using the `do.call()` version.
 
@@ -654,5 +654,3 @@ A really nice use case of loops is to iteratively add variables to a regression,
 
 
 ```
-
-
