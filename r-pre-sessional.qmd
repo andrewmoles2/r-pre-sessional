@@ -170,7 +170,7 @@ Some cool things you can do in R:
 
 ![Animated gif of rainfall and temperature changes over time in Australian cities](https://github.com/andrewmoles2/TidyTuesday/blob/master/Australia-fires-2020-01-07/Auz_Rain&Temp2.gif?raw=true){fig-alt="Animated gif of rainfall and temperature changes over time in Australian cities" fig-align="center" width="90%"}
 
-![Regional map UK showing how each area is doing in terms of gender pay equality for each year data has existed, from 2017-2023](https://github.com/andrewmoles2/TidyTuesday/blob/master/paygap-2022-06-28/median_pay_diff_postcode_year.png?raw=true){fig-alt="Regional map showing how each area of the UK is doing in terms of gender pay equality for each year data has existed from 2017-2023. " fig-align="center" width="75%"}
+![Regional map UK showing how each area is doing in terms of gender pay equality for each year data has existed, from 2017-2024](https://github.com/andrewmoles2/TidyTuesday/blob/master/paygap-2022-06-28/median_pay_diff_postcode_year.png?raw=true){fig-alt="Regional map showing how each area of the UK is doing in terms of gender pay equality for each year data has existed from 2017-2024. " fig-align="center" width="75%"}
 
 ::: {.callout-tip collapse="false"}
 ## Fun side note
