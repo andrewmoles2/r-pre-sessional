@@ -252,7 +252,7 @@ In the first change, we changed the 8th element of the someNumbers data to 50 (i
 
 You wanted to calculate bmi health metrics for your family members, and have collected their weights and heights below. We want all heights to be in meters, and all weights to be in kilograms. Robin has used centimetres for height, Sam (Mum) has used feet for height, Sam (Mum) and Jules (Dad) have used stone for weight.
 
-1)  Convert Sam (Mum)'s height from feet to meters. The calculation is feet multiplied by 0.0328084.
+1)  Convert Sam (Mum)'s height from feet to meters. The calculation is feet divided by 0.0328084.
 
 2)  Convert Robin's height from centimetres to meters. The calculation is centimetres divided by 100.
 
@@ -280,7 +280,7 @@ family_weights <- c(94, 9.135, 9.6075, 89, 81)
 
 We would be grateful if you could take a minute before the end of the workshop so we can get your feedback!
 
-[https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Fundamentals 2: Vectors, Functions, and Indexing &topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EmUo-IOFzsxFjPujn5poqp4BKnYT46Eg1qoA5o1fSHr6Lw?e=UGNzwj](https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Fundamentals 2: Vectors, Functions, and Indexing &topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EmUo-IOFzsxFjPujn5poqp4BKnYT46Eg1qoA5o1fSHr6Lw?e=UGNzwj)
+[https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R Fundamentals 2: Vectors, Functions, and Indexing &topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EmUo-IOFzsxFjPujn5poqp4BKnYT46Eg1qoA5o1fSHr6Lw?e=UGNzwj](https://lse.eu.qualtrics.com/jfe/form/SV_3O5x8u4CjhskCcC?coursename=R%20Fundamentals%202:%20Vectors,%20Functions,%20and%20Indexing%20&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EmUo-IOFzsxFjPujn5poqp4BKnYT46Eg1qoA5o1fSHr6Lw?e=UGNzwj)
 
 The solutions will be available from a link at the end of the survey.
 
