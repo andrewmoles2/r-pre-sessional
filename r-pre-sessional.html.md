@@ -104,15 +104,15 @@ To install R on your Mac you need to know the type of processor your Mac uses. T
 
 1)  On the top navigation bar on your Mac, click on the apple icon
 2)  From the drop down menu, select *About This Mac*
-3)  In *Overview* you will find the information about your Mac. If you have an *Intel Mac*, you will see the processor row, which has information that includes *Intel*. If you have an M1 or M2 Mac, you will see chip and M1/M2 in the *Overview* with something like *Chip Apple M1*
+3)  In *Overview* you will find the information about your Mac. If you have an *Intel Mac*, you will see the processor row, which has information that includes *Intel*. If you have an M-Series Mac (M1, M2, M3, M4 etc. chips), you will see chip and M1/M2/M3/M4 in the *Overview* with something like *Chip Apple M1*
 
 ![](images/mac_pros1.png){width="49%"} ![](images/mac_pros2.png){width="49%"}
 
-#### M1 or M2 Mac
+#### M-Series Mac (M1, M2, M3, M4 etc. chips)
 
 -   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/macosx/){target="_blank"}
 
--   If you have a *M1 Mac* you will need click on the link the contains **arm64** to download R. It will look something like `R-4.3.1-arm64.pkg`
+-   If you have a *M1 Mac* you will need click on the link the contains **arm64** to download R. It will look something like `R-4.4.1-arm64.pkg`
 
 -   Once downloaded, open the `.pkg` file and follow the installation instructions
 
@@ -120,7 +120,7 @@ To install R on your Mac you need to know the type of processor your Mac uses. T
 
 -   To install R, you need to download the installer from the [R website](https://cloud.r-project.org/bin/macosx/){target="_blank"}
 
--   If you have a *Intel Mac* you will need to click on the link that just contains the version of R. It will look something like `R-4.3.1.pkg`, and can be located a touch further down the page under the header **Binaries for legacy macOS/OS X systems:**
+-   If you have a *Intel Mac* you will need to click on the link that just contains the version of R. It will look something like `R-4.4.1.pkg`, and can be located a touch further down the page under the header **Binaries for legacy macOS/OS X systems:**
 
 -   Once downloaded, open the `.pkg` file and follow the installation instructions
 
