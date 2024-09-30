@@ -252,7 +252,7 @@ In the first change, we changed the 8th element of the someNumbers data to 50 (i
 
 You wanted to calculate bmi health metrics for your family members, and have collected their weights and heights below. We want all heights to be in meters, and all weights to be in kilograms. Robin has used centimetres for height, Sam (Mum) has used feet for height, Sam (Mum) and Jules (Dad) have used stone for weight.
 
-1)  Convert Sam (Mum)'s height from feet to meters. The calculation is feet divided by 0.0328084.
+1)  Convert Sam (Mum)'s height from feet to meters. The calculation is feet multiplied by 0.3048.
 
 2)  Convert Robin's height from centimetres to meters. The calculation is centimetres divided by 100.
 
@@ -260,7 +260,7 @@ You wanted to calculate bmi health metrics for your family members, and have col
 
 4)  Calculate the bmi for all family names and store in a vector called family_bmi.
 
-5)  Calcuate the average bmi of the family members and store in a variable called avg_bmi.
+5)  Calculate the average bmi of the family members and store in a variable called avg_bmi.
 
 6)  Add the family names to the family_bmi vector. Searching online for creating named vectors should help.
 
