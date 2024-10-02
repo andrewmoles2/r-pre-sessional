@@ -138,7 +138,18 @@ To run R on a Mac operating system, XQuartz is required. You can install it by f
 
 ## Installing R and RStudio installation issues
 
-If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you will have to install an older version of the software. Speak with a trainer if you had difficulties with the install.
+If your installation for R and RStudio did not work, this is likely because your computer is running an older operating system. In these cases you have a few options available to you. 
+
+The first option is to install an older version of R or RStudio that matches the operating system you are using. These older version can be found on the R and RStudio installation pages. 
+The second option is to use [Posit Cloud](https://login.posit.cloud/login){target="_blank"}, which is a cloud based version of RStudio. 
+
+Once you have signed up you will need to start a new project. Select *New RStudio Project*. See the image below for help. 
+
+![](images/new_project.png){width="40%"}
+
+You will then have RStudio available to you in the cloud! You will need to upload the Rmd files to be able to use them. Click on the upload button in the bottom right panel, then choose a file. Note you will need to have downloaded the materials first, see section 4 for this! See the image below for help. 
+
+![](images/upload_cloud.png){width="40%"}
 
 ## Note on R and RStudio
 
