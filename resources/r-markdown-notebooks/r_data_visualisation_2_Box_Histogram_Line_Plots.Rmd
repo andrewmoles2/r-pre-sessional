@@ -134,7 +134,7 @@ COVID data is from our world in data, which is stored in a GitHub repository. Mo
 
 ```{r}
 # load in covid data and select cases, deaths and vaccines
-covid <- read_csv("https://covid.ourworldindata.org/data/owid-covid-data.csv") %>%
+covid <- read_csv("https://raw.githubusercontent.com/owid/covid-19-data/refs/heads/master/public/data/owid-covid-data.csv") %>%
   select(iso_code:new_deaths_smoothed_per_million, contains("vaccin"),
          population, median_age, gdp_per_capita)
 
