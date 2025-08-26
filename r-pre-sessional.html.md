@@ -26,9 +26,6 @@ title-block-banner-color: "#000508"
 css: css/styles.css
 ---
 
-
-
-
 # Introduction to the pre-sessional for R
 
 The R pre-sessional workshops are designed to help you get started with R which you will need for some modules during your degree programme. For example, students who will take a Methodology module will likely be using R in those seminars.
@@ -192,9 +189,6 @@ Some cool things you can do in R:
 This webpage was built using R. If you are interested chat to one of the instructors about it!
 :::
 
-
-
-
 ````{=html}
 <!--
 
@@ -290,6 +284,7 @@ In this exercise we are going to open a script, and save it.
 2)  Now the script is open, save the script as something like `r-pre-sessional.R`. There are a few ways of doing this, pressing `command/ctrl + s` is the simplest method
 3)  Lets try and run some code. In this example, you want to convert your running time in minutes to seconds. In the script, type or copy the following code:
 
+
 ::: {.cell}
 
 ```{.r .cell-code  code-fold="false"}
@@ -301,6 +296,7 @@ run_seconds <- run_minutes*60
 run_seconds
 ```
 :::
+
 
 4)  Now run the code! There are two main ways of doing this. First, we can highlight the code, and click the `Run` button near the top centre right of RStudio. Second, we can put our cursor on each line and use `command/ctrl + enter` to run the code line by line.
 5)  The result of your code will appear in the console and should look like: [1] 1580.4
@@ -332,9 +328,11 @@ In the script we made in exercise 3, try the following exercises:
 7)  Print your `my_height_ft_m` variable
 8)  Now try and do the calculations for your own height, or an estimate if you are not sure! You can just change the value of `my_height`
 
+
 ::: {.cell}
 
 :::
+
 
 Using a value of `my_height` as 195cm, we would expect to get the outputs of:
 
@@ -391,9 +389,11 @@ In the script we loaded in exercise 5:
 
 You can find the formula for BMI on the [British Heart Foundation website](https://extras.bhf.org.uk/patientinfo/bmi-v1.01/app/index.html)
 
+
 ::: {.cell}
 
 :::
+
 
 You should get an output of [1] 24.7205785667324
 
@@ -441,9 +441,6 @@ You can either use these videos to follow along, or as a tool for finding the so
 -->
 ````
 
-
-
-
 ------------------------------------------------------------------------
 
 # Workshop materials {#sec-option}
@@ -461,15 +458,7 @@ You can either use these videos to follow along, or as a tool for finding the so
 
 The files for the workshops can be downloaded from the button below:
 
-
-
-
 {{< downloadthis resources/r-markdown-notebooks/R_pre_sessional_files.zip label='Download R pre-sessional files' dname=r-markdown-files icon=r-circle type=success >}}
-
-
-
-
-
 
 Once downloaded it is important that you ***unzip/uncompress*** the file. The download is a zip file, which a file that has been compressed to save space for easier transfer and storage. You should uncompress these files otherwise it can be hard for some software to use the files inside.
 
